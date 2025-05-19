@@ -142,7 +142,7 @@ public class VistaLogin extends AppCompatActivity implements IVistaLogin.Vista, 
         //Permisos USB
         usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
         IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
-        registerReceiver(usbReceiver, filter);
+        registerReceiver(usbReceiver, filter, "com.crystal.selfcheckoutapp.USB_PERMISSION", null);
 
         // Check for connected devices
         for (UsbDevice device : usbManager.getDeviceList().values()) {

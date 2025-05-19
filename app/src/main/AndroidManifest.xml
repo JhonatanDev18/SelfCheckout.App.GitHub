@@ -17,7 +17,9 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <permission android:name="com.crystal.selfcheckoutapp.USB_PERMISSION"
+        android:protectionLevel="signature" />
+
 
     <application
         android:name=".Modelo.common.MyApp"
