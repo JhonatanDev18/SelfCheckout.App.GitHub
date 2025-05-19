@@ -1,0 +1,156 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clASDF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.dialogfragment.VistaAutorizacionSimpleFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseAutorizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogoAutorizacion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/autorizacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseAutorizacion" />
+
+    <TextView
+        android:id="@+id/tvTituloAutorizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/autorizacion"
+        android:textColor="@color/color_texto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoAutorizacion" />
+
+    <TextView
+        android:id="@+id/tvTextoAutorizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/auto_cerrar_sesion"
+        android:textColor="@color/color_texto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAutorizacion" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliUsuarioLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/tvTextoAutorizacion"
+        app:layout_constraintStart_toStartOf="@+id/tvTextoAutorizacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoAutorizacion"
+        app:startIconDrawable="@drawable/ic_usuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsuarioASDF"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="@dimen/vl_texto_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tilUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilUsuario" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliPassASDF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrasena"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/tliUsuarioLogin"
+        app:layout_constraintStart_toStartOf="@+id/tliUsuarioLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tliUsuarioLogin"
+        app:startIconDrawable="@drawable/candado_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassASDF"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionSearch"
+            android:inputType="textPassword"
+            android:textSize="@dimen/vl_texto_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tilPassLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilPassLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAutorizarCierre"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/autorizar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tliPassASDF"
+        app:layout_constraintStart_toStartOf="@+id/tliPassASDF"
+        app:layout_constraintTop_toBottomOf="@+id/tliPassASDF" />
+
+    <Button
+        android:id="@+id/btnAtrasAutorizacionCierre"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:drawableStart="@drawable/flecha_izquierda"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAutorizarCierre"
+        app:layout_constraintStart_toStartOf="@+id/btnAutorizarCierre"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutorizarCierre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

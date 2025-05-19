@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivClosePerifericos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivIconPerifericos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/exportar_configuracion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivClosePerifericos" />
+
+    <TextView
+        android:id="@+id/tvTituloPerifericos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/exportacion_perifericos"
+        android:textColor="@color/color_texto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIconPerifericos" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConsultaCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="6sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvTituloPerifericos"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloPerifericos"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloPerifericos">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoConsultaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliTiendaPerifericos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_tienda"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/ivEditarTiendaPerifericos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTiendaPerifericos"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliTiendaPerifericos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliTiendaPerifericos"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivEditarTiendaPerifericos"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/editar"
+                app:layout_constraintBottom_toBottomOf="@+id/tliTiendaPerifericos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tliTiendaPerifericos" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliCajaPerifericos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/tv_caja"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/tliTiendaPerifericos"
+                app:layout_constraintEnd_toStartOf="@+id/ivEditarCajaPerifericos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliTiendaPerifericos">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCajaPerifericos"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliCajaPerifericos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliCajaPerifericos"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivEditarCajaPerifericos"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/editar"
+                app:layout_constraintBottom_toBottomOf="@+id/tliCajaPerifericos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tliCajaPerifericos" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnExportarPerifericos"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:text="@string/exportar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cvConsultaCliente"
+        app:layout_constraintStart_toStartOf="@+id/cvConsultaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/cvConsultaCliente" />
+</androidx.constraintlayout.widget.ConstraintLayout>

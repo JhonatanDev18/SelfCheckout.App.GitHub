@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.VistaConsultaCliente">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Vista.VistaConsultaCliente">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentProceso"
+            android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaProcesoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout="@layout/vista_fragment_proceso" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentLogoMarca"
+            android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaLogoMarcaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/glSeparadorLogoMarca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+            tools:ignore="MissingConstraints"
+            tools:layout="@layout/vista_fragment_logo_marca" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glSeparadorLogoMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/separador_logo_pantalla" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvConsultaCliente"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="0sp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineExterno"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFondoCC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_card_cedula"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvTextoTituloLecturaCedula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="@string/texto_consulta_cliente_titulo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/vcc_texto_size_titulo_lectura_cedula"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSeparador"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/color_texto"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintStart_toStartOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextoTituloLecturaCedula" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tliCedula"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="@string/et_cedula"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextAppearance="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintStart_toStartOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSeparador"
+                    app:startIconDrawable="@drawable/cedula_identificacion">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCedula"
+                        style="@style/fuente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:imeOptions="actionSearch"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/vcc_et_texto_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tliCedula"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tliCedula" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvSeparador1"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/color_texto"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintStart_toStartOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tliCedula" />
+
+                <Button
+                    android:id="@+id/btnConsultarCedula"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rounded_button_verde"
+                    android:elevation="4dp"
+                    android:text="@string/btn_consultar_cliente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vcc_btn_texto_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintStart_toStartOf="@+id/tvTextoTituloLecturaCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSeparador1" />
+
+                <TextView
+                    android:id="@+id/tvTextoLecturaCedula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/texto_consulta_cliente"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/vcc_texto_size_lectura_cedula"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnContinuarSinDatos" />
+
+                <TextView
+                    android:id="@+id/tvTextoLecturaArticulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/campana_roja"
+                    android:gravity="center"
+                    android:text="@string/texto_cambiar_idioma"
+                    android:textColor="@color/rojo"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextoLecturaCedula" />
+
+                <Button
+                    android:id="@+id/btnCambiarIdiomaVC"
+                    style="@style/fuente"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/rounded_button"
+                    android:drawableEnd="@drawable/idiomas_24"
+                    android:elevation="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/btn_cambiar_idioma"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnConsultarCedula"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnConsultarCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextoLecturaArticulo" />
+
+                <TextView
+                    android:id="@+id/tvTextoContinuarSinDatos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:drawableStart="@drawable/campana_roja"
+                    android:gravity="center"
+                    android:text="@string/texto_sin_datos"
+                    android:textColor="@color/rojo"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnConsultarCedula" />
+
+                <Button
+                    android:id="@+id/btnContinuarSinDatos"
+                    style="@style/fuente"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_button_blanco"
+                    android:elevation="4dp"
+                    android:text="@string/btn_sin_datos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnConsultarCedula"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnConsultarCedula"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextoContinuarSinDatos" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineExterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvInstruccionesApp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="0sp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentFooter"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineExterno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFondoInstruccionesApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_card_paso_paso"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvTituloInstrucciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="@string/tv_titulo_instrucciones"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vcc_texto_size_titulo_instrucciones"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvInstruccion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/tv_instruccio_1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vcc_texto_size_intrucciones"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTituloInstrucciones" />
+
+                <TextView
+                    android:id="@+id/tvInstruccion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tv_instruccio_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vcc_texto_size_intrucciones"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInstruccion1" />
+
+                <TextView
+                    android:id="@+id/tvInstruccion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tv_instruccio_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vcc_texto_size_intrucciones"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInstruccion2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentFooter"
+            android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaFooterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivConfiguracionVC"
+            tools:ignore="MissingConstraints"
+            tools:layout="@layout/vista_fragment_footer" />
+
+        <ImageView
+            android:id="@+id/ivConfiguracionVC"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/configuraciones"
+            app:layout_constraintBottom_toBottomOf="@+id/fragmentFooter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fragmentFooter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

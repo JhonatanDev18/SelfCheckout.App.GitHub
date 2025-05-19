@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado normal -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_btnes" /> <!-- Color de fondo normal -->
+            <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
+        </shape>
+    </item>
+
+    <!-- Estado presionado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_btnes_oprimido" /> <!-- Color de fondo al presionar -->
+            <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
+        </shape>
+    </item>
+</selector>

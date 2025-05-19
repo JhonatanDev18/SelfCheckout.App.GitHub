@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_apk">V.4.3.4.0</string>
+    <string name="app_name">Self Checkout</string>
+    <string name="app_name_splash">Самообслуживание…</string>
+    <string name="titulo_config">Настройка</string>
+
+    <!-- TODO: VistaLogin-->
+    <string name="usuario">Пользователь</string>
+    <string name="contrasena">Пароль</string>
+    <string name="iniciar_sesion">Войти</string>
+    <string name="usuario_requerido">Требуется пользователь</string>
+    <string name="contrasena_requerido">Требуется пароль</string>
+    <string name="progress_iniciando_sesion">Вход в систему…</string>
+    <string name="alertaPermisosMemoriaInterna">Для правильной работы приложения Self Checkout вы должны предоставить разрешения</string>
+    <string name="progress_cargando">Загрузка…</string>
+    <string name="progress_escaneando">Сканирование…</string>
+    <string name="progress_anulando">Отмена…</string>
+    <string name="la_transaccion_ya_anulada">Эта транзакция уже отменена.</string>
+    <string name="progress_retiro">Проверка…</string>
+    <string name="progress_leyendo">Загрузка…</string>
+    <string name="opcion_deshabilitada">Опция заблокирована.</string>
+    <string name="progress_consultando_cupo_empleado">Запрос квоты сотрудника…</string>
+    <string name="progress_reenviando">Переотправка кода…</string>
+    <string name="sin_cajas_disponible">В магазине %1$s нет доступных касс.</string>
+    <string name="caja_cerrada">Касса %1$s закрыта</string>
+    <string name="buscar_caja">Поиск кассы</string>
+    <string name="buscar_ciudad">Поиск города</string>
+    <string name="buscar_departamento">Поиск отдела</string>
+    <string name="cajas">Кассы магазина %1$s</string>
+    <string name="titulo_recomendacion_carga">Информация</string>
+    <string name="selecciona_n_dispositivo">Выберите кассу для этого устройства</string>
+    <string name="parametros_no_encontrados">Параметры не найдены</string>
+    <string name="mensaje_recomendacion_carga">Идет загрузка параметров печати и оплаты TEF. Self Checkout закроется для завершения загрузки этой конфигурации.</string>
+    <string name="error_crear_directorio">Проблема при создании каталога для сохранения XML-конфигурации, обратитесь к администратору.</string>
+    <string name="error_lectura_parametros">Ошибка чтения следующих параметров: %1$s. Пожалуйста, немедленно свяжитесь с администратором.</string>
+    <string name="msj_alerta_apertura">Дата открытия %1$s кассы %2$s не совпадает с датой системы %3$s</string>
+
+    <!-- TODO: VistaConsultaCliente-->
+    <string name="texto_consulta_cliente_titulo">Введите свой номер удостоверения личности</string>
+    <string name="texto_consulta_cliente">Введите свой номер удостоверения личности и нажмите кнопку "Войти"</string>
+    <string name="et_cedula" translatable="false">Номер удостоверения личности</string>
+    <string name="tv_titulo_instrucciones">ШАГ ЗА ШАГОМ</string>
+    <string name="tv_instruccio_1">1. Введите ваш номер удостоверения личности.</string>
+    <string name="tv_instruccio_2">2. Положите все товары, которые вы хотите взять, в ящик.</string>
+    <string name="tv_instruccio_3">3. Выберите предпочтительный способ оплаты и вы готовы.</string>
+    <string name="btn_cliente_generico">Если вы не хотите использовать свой документ, нажмите здесь</string>
+    <string name="btn_consultar_cliente">Войти</string>
+    <string name="tv_titulo_bienvenido">Добро пожаловать!</string>
+    <string name="texto_cerrar_sesion">Вы уверены, что хотите выйти из системы?</string>
+    <string name="progress_consultando_cedula">Проверка удостоверения личности…</string>
+    <string name="progress_consultando_ultima_tef">Проверка…</string>
+    <string name="confirmacion_de_datos">Подтверждение данных</string>
+    <string name="texto_confirmacion_de_datos">Подтвердите, что данные, которые вы видите на экране, правильные. Это вы? Примечание: Если данные неверны, обратитесь к кассе для обновления своих данных.</string>
+    <string name="tv_cedula_cliente">Номер удостоверения личности</string>
+    <string name="tv_nombre_cliente">Имя</string>
+    <string name="tv_celular_cliente">Номер телефона</string>
+    <string name="tv_correo_cliente">Электронная почта</string>
+    <string name="error_cliente_no_existe">Ошибка, этот клиент не найден в CEGID.</string>
+    <string name="_cliente">CONSUMIDOR</string>
+    <string name="_generico">FINAL</string>
+    <string name="ninguno">Ничего</string>
+    <string name="cedula_ciudadania_letra">CC</string>
+    <string name="key_intent_cliente">Клиент</string>
+    <string name="key_intent_productos">Товары</string>
+    <string name="key_intent_descuentos">Скидки</string>
+    <string name="key_intent_factura">Счет</string>
+    <string name="key_intent_ultima_tef">Последняя tef</string>
+    <string name="key_intent_reconeccion">Повторное подключение</string>
+    <string name="key_intent_cliente_nuevo">НовыйКлиент</string>
+    <string name="crear_cliente">Регистрация</string>
+    <string name="sin_registro">Без регистрации</string>
+    <string name="crear_cliente_confirmar">Подтвердите, что у вас есть удостоверение личности: </string>
+    <string name="continuar_cliente_generico">Ваше удостоверение личности не зарегистрировано, хотите продолжить без данных?. Примечание: Чтобы зарегистрировать свои данные, подойдите к кассе.</string>
+    <string name="info_usar_app">Для использования системы самообслуживания необходимо продолжать без данных или быть зарегистрированным. Если вам нужна дополнительная информация, обратитесь к кассе.</string>
+    <string name="identificacion_invalida">Неверный номер удостоверения личности</string>
+    <string name="tab_consultaCliente">Консультация</string>
+    <string name="tab_compraCliente">Сканирование</string>
+    <string name="tab_medioPago">Способ оплаты</string>
+    <string name="tab_tirilla">Готово</string>
+    <string name="configuraciones">Настройки</string>
+    <string name="selecciona_configuracion">Выберите одну из следующих конфигураций</string>
+    <string name="aprobacion">Утверждение:</string>
+    <string name="seleccione_opcion_tef">Транзакция tef (%1$s)</string>
+    <string name="texto_seleccione_opcion_tef">Хотите отменить транзакцию tef или узнать больше информации?</string>
+    <string name="texto_no_hay_ultimo_pago_tef" translatable="false">Нет последнего зарегистрированного платежа.</string>
+    <string name="error_caracter_especial_nombre">Возникла проблема с вашими личными данными. Пожалуйста, подойдите к кассе, чтобы исправить информацию.</string>
+
+    <!-- TODO: AnularTefDialogFragment -->
+    <string name="titulo_anulacion">Отмена</string>
+    <string name="texto_anulacion">Выберите транзакцию TEF для отмены.</string>
+    <string name="hint_recibo">Номер чека.</string>
+    <string name="btn_anular">Отменить</string>
+    <string name="et_invalido">Введите номер чека.</string>
+
+    <!-- TODO: AutorizacionSimpleDialogFragment -->
+    <string name="auto_cerrar_sesion">Администратор должен подтвердить закрытие SelfCheckout.</string>
+    <string name="auto_configurar">Администратор должен подтвердить настройку SelfCheckout.</string>
+    <string name="autorizacion">Авторизация</string>
+    <string name="usurio_requerido">Требуется пользователь</string>
+    <string name="pass_requerido">Требуется пароль</string>
+    <string name="error_autorizacion_">Ошибка авторизации:</string>
+    <string name="consultando_autorizacion">Авторизация…</string>
+    <string name="tipo_usuario_invalido">Неверное имя пользователя или пароль.</string>
+    <string name="escaneo_cancelado">Сканирование отменено</string>
+
+    <!-- TODO: Lector de codigo de barras-->
+    <string name="linterna_encendida">Включить фонарик</string>
+    <string name="linterna_apagada">Выключить фонарик</string>
+    <string name="msj_scan_barcode">Поместите штрих-код внутрь прямоугольника просмотра для сканирования.</string>
+
+    <!-- TODO: VistaClienteDetalle-->
+    <string name="actualizar_cliente">Обновить личные данные</string>
+    <string name="autopago_tiendas">Автоплатеж в магазинах</string>
+    <string name="cliente_nuevo">Регистрация</string>
+    <string name="btn_continuar">Продолжить</string>
+    <string name="btn_encerder_rfid">Готово, товары в корзине</string>
+    <string name="et_cedula_detalle">Номер идентификации</string>
+    <string name="btn_generar_qr">Создать QR Bancolombia</string>
+    <string name="et_nombre_detalle">Имена</string>
+    <string name="et_apellido_detalle">Фамилии</string>
+    <string name="et_fecha_nacimiento_detalle">Дата рождения</string>
+    <string name="et_correo_detalle">Адрес электронной почты</string>
+    <string name="et_celular_detalle">Номер мобильного</string>
+    <string name="et_direccion_detalle">Адрес проживания</string>
+    <string name="et_departamento_detalle">Регион</string>
+    <string name="texto_tipo_documento">Тип документа</string>
+    <string name="et_ciudad_detalle">Город</string>
+    <string name="rb_genero_masculino">Мужской</string>
+    <string name="rb_genero_femenino">Женский</string>
+    <string name="tv_seleccione_departamento">Выберите регион</string>
+    <string name="tv_seleccione_ciudad">Выберите город</string>
+    <string name="tv_titulo_genero">Пол</string>
+    <string name="tv_titulo_fecha_nacimiento">Дата рождения</string>
+    <string name="texto_sin_autorizacion">Вы должны дать разрешение на обработку ваших данных для продолжения</string>
+    <string name="autorizacion_datos_personales">Я разрешаю Crystal S.A.S использовать и обрабатывать мои личные данные</string>
+    <string name="seleccione_tipo_documento">Выберите тип документа</string>
+    <string name="registro_nombre_requerido">Введите ваше имя</string>
+    <string name="registro_apellido_requerido">Введите вашу фамилию</string>
+    <string name="registro_fecha_nacimiento_requerido">Введите вашу дату рождения</string>
+    <string name="registro_fecha_nacimiento_requerido_valida">Введите действительную дату рождения</string>
+    <string name="registro_fecha_nacimiento_requerido_valido">Вы должны быть старше 15 лет</string>
+    <string name="registro_correo_y_celular_requerido">Введите адрес электронной почты или номер мобильного</string>
+    <string name="registro_correo_requerido_valido">Введите действительный адрес электронной почты</string>
+    <string name="registro_celular_requerido">Введите ваш номер мобильного</string>
+    <string name="registro_celular_requerido_valido">Введите действительный номер мобильного</string>
+    <string name="registro_direccion_requerido">Введите ваш адрес проживания</string>
+    <string name="registro_genero_requerido">Введите ваш пол</string>
+    <string name="registro_departamento_requerido">Введите ваш регион проживания</string>
+    <string name="registro_ciudad_requerido">Введите ваш город проживания</string>
+    <string name="departamento_requerido">Сначала выберите регион</string>
+    <string name="progress_registrando_cliente">Сохранение информации…</string>
+    <string-array name="documentos_identidad">
+        <item>Удостоверение личности</item>
+        <item>NIT</item>
+        <item>Паспорт</item>
+        <item>Удостоверение личности Коста-Рики</item>
+        <item>Юридическое удостоверение</item>
+        <item>DIMEX</item>
+        <item>NITE</item>
+        <item>Иностранец</item>
+    </string-array>
+
+    <!-- TODO: VistaCompraCliente-->
+    <string name="et_consultar_producto">Введите код продукта</string>
+    <string name="tv_titulo_numero_cedula">Идентификационный номер:</string>
+    <string name="tv_titulo_correo">Адрес электронной почты:</string>
+    <string name="tv_titulo_celular">Номер мобильного:</string>
+    <string name="tv_titulo_saludo">ЗДРАВСТВУЙТЕ,</string>
+    <string name="texto_consulta_articulo">Хотите добавить новые товары?</string>
+    <string name="texto_mas_bolsas">Хотите добавить больше сумок?</string>
+    <string name="texto_eliminar_articulo">Хотите удалить какой-то товар?</string>
+    <string name="tv_ean_producto">Штрих-код</string>
+    <string name="tv_descripcion_producto">Описание</string>
+    <string name="tv_cantidad_producto">Количество</string>
+    <string name="tv_valor_producto">Стоимость</string>
+    <string name="tv_precio_producto">Цена за единицу</string>
+    <string name="tv_descuento_producto" translatable="false">Скидка</string>
+    <string name="tv_total_producto">Сумма к оплате</string>
+    <string name="tv_precio_producto_mp">Сумма к оплате (с учетом скидок или акций)</string>
+    <string name="tv_indicador_producto">Индикатор (скидки или акции)</string>
+    <string name="tv_descuento_tarifa_producto">Скидка по тарифу</string>
+    <string name="tv_titulo_valor_final_producto">Итоговая сумма:</string>
+    <string name="tv_numero_articulos">Количество товаров</string>
+    <string name="tv_subtotal">Промежуточная сумма</string>
+    <string name="tv_total_descuento">Итоговая сумма со скидкой</string>
+    <string name="btn_nuevos_articulos">Добавить новые товары</string>
+    <string name="btn_elimar_articulos">Удалить товары</string>
+    <string name="btn_mas_bolsas">Добавить сумки</string>
+    <string name="btn_ingresar">Войти</string>
+    <string name="ejm_id">Пример: 1234566778</string>
+    <string name="tv_total_pagar">ИТОГО К ОПЛАТЕ</string>
+    <string name="btn_pagar">Оплатить</string>
+    <string name="btn_pagar_precio">Оплатить %1$s</string>
+    <string name="btn_cambiarmp">Изменить способ оплаты</string>
+    <string name="btn_reiniciar">Считать другое удостоверение</string>
+    <string name="texto_medio_de_pago_seleccionado">Способ оплаты</string>
+    <string name="btn_volver_a_empezar">Начать заново</string>
+    <string name="title_volver_a_empezar">Сбросить чтение</string>
+    <string name="texto_volver_a_empezar">Вы уверены, что хотите начать чтение товаров заново?</string>
+    <string name="progress_consultando_producto">Поиск продукта…</string>
+    <string name="progress_consultando_productos">Поиск продуктов…</string>
+    <string name="error_producto_no_encontrado">Товар не найден</string>
+    <string name="confirme_lectura_eanes">Подтвердите чтение %1$s</string>
+    <string name="incentivo">Стимул</string>
+    <string name="btn_salir_confi">Выйти из настроек</string>
+    <string name="editar_texto_fragment">Изменить %1$s</string>
+    <string name="problemas_lector">Читалка работает некорректно, обратитесь к администратору магазина.</string>
+    <string name="producto_precio_cero">Обнаружен товар с ценой 0. Пожалуйста, удалите его из ящика и сообщите кассиру. Товар: %1$s</string>
+    <string name="productos_precio_cero">Обнаружены товары с ценой 0. Пожалуйста, удалите их из ящика и сообщите кассиру. Товары: %1$s</string>
+
+    <!-- TODO: VistaMediosPago-->
+    <string name="pagar_bancolombia_qr">QR-код Bancolombia</string>
+    <string name="pagar_tarjeta">Карта</string>
+    <string name="tv_titulo_seleccione">Выберите способ оплаты:</string>
+    <string name="btn_atras_medio_pago">Назад</string>
+    <string name="btn_regresar">Назад</string>
+    <string name="pago_no_encontrado_qr_bancolombia_idioma">Платеж не найден.</string>
+    <string name="total_a_pagar">ИТОГО К ОПЛАТЕ:</string>
+    <string name="cantidad_articulos_mp">Количество товаров:</string>
+    <string name="error_cupo_empleado">Не удается завершить продажу, ваш лимит сотрудника составляет %1$s… лимит превышен на %2$s,
+    если вы хотите продолжить покупку, выберите другой способ оплаты.</string>
+    <string name="progress_procesando_compra">Обработка покупки…</string>
+    <string name="progress_procesando_compra_exitosa">Оплата прошла успешно, завершение продажи…</string>
+    <string name="progress_procesando_compra_datafono">Генерация запроса на датапомпьютер…</string>
+    <string name="tv_nombre_producto_texto">GALAX ПЛАСТИКОВЫЙ ПАКЕТ</string>
+    <string name="tv_valor_final_texto">Итоговая стоимость:</string>
+    <string name="tv_cantidad_texto">3</string>
+    <string name="tv_Precio_texto">$60</string>
+    <string name="tv_Dcto_texto">$0</string>
+    <string name="tv_valor_pagar_texto">$180</string>
+    <string name="codigo_ya_redimido_idioma">Этот проверочный код уже был использован</string>
+    <string name="codigo_ya_expiro_idioma">Этот проверочный код уже истек</string>
+    <string name="codigo_no_existe_idioma">Этого проверочного кода не существует</string>
+    <string name="introduce_codigo_verificacion">Введите код подтверждения</string>
+    <string name="codigo_verificacion_incorrecto">Введенный код неверен</string>
+
+    <!-- TODO: VistaFragmentFooter-->
+    <string name="texto_desarrollado_por">Разработано Crystal S.A.S</string>
+    <string name="titulo_terminos_condiciones">Условия и положения</string>
+    <string name="texto_terminos_condiciones">Доступно только для онлайн-платежей. Не применяются скидки, требующие управления администратора магазина, такие как Вооруженные силы,
+    Bancolombia, и другие. Для таких покупок или в случае возврата товара обратитесь, пожалуйста, к кассам, обслуживаемым персоналом магазина.</string>
+
+    <!-- TODO: VistaConfiguracion-->
+    <string name="guardado_exitoso_xml">Настройки устройства успешно сохранены.</string>
+    <string name="mensaje_guardar_xml">Не удалось сохранить XML-файл, поскольку каталог не был создан правильно,
+    свяжитесь с администратором.</string>
+    <string name="epson">Epson</string>
+    <string name="bixolon">Bixolon</string>
+
+    <!-- TODO: VistaImprimirTirilla-->
+    <string name="tx_texto_impresion_gracias">СПАСИБО ЗА ПОКУПКУ!</string>
+    <string name="tx_texto_impresion_espera">Надеемся увидеть вас снова</string>
+    <string name="tx_texto_bixolon_config">Seleccione el dispositivo BIXOLON para imprimir</string>
+    <string name="tx_texto_impresion_califica">Оцените свой опыт</string>
+    <string name="tx_texto_impresion_gracias_califica">Спасибо за вашу оценку</string>
+    <string name="impresora_configuracion">Настройка принтера</string>
+    <string name="tef_configuracion">Настройка терминала оплаты</string>
+    <string name="perifericos_configuracion">Configurar Perifericos</string>
+    <string name="log_configuracion">Configurar Log</string>
+    <string name="direccion_ip">IP-адрес</string>
+    <string name="puerto">Порт</string>
+    <string name="mac">MAC-адрес</string>
+    <string name="codigo_respuesta">Код ответа</string>
+    <string name="codigo_datafono">Код терминала оплаты</string>
+    <string name="codigo_unico_datafono">Уникальный код торговли</string>
+    <string name="et_usuario_datafono">Пользователь терминала оплаты</string>
+    <string name="et_pass_datafono">Пароль терминала оплаты</string>
+    <string name="et_pass_supervisor" translatable="false">Пароль руководителя (Отмена)</string>
+    <string name="et_time_datafono">Тайм-аут терминала оплаты (3 секунды или более)</string>
+    <string name="texto_mayor_o_igual_a">Введите время 3 секунды или более.</string>
+    <string name="et_time_datafono_espera" translatable="false">Тайм-аут ожидания банковского терминала (Больше или равно 3 мин)</string>
+    <string name="texto_mayor_o_igual_a_espera" translatable="false">Введите время больше или равное 3 минутам.</string>
+    <string name="config_impresora">Настройка принтера</string>
+    <string name="desconectando">Отключение</string>
+    <string name="no_conectado">Нет подключения</string>
+    <string name="error_desconectada">Ошибка! Отключено</string>
+    <string name="bluetooth_error_adapter">Ошибка чтения адаптера Bluetooth</string>
+    <string name="bluetooth_apagado">Bluetooth отключен</string>
+    <string name="pulse_impresion">Нажмите кнопку печати</string>
+    <string name="activat_bluetooth_impr">Вам нужно включить Bluetooth для печати.</string>
+    <string name="conectado___">Подключение…</string>
+    <string name="imprimiendo___">Печать…</string>
+    <string name="impresion_realizada">Печать завершена</string>
+    <string name="rivise_dispositivo_bluetooth">Проверьте подключение к устройству, а также включен ли Bluetooth.</string>
+    <string name="revise_ip_puerto">Проверьте введенные IP и порт, а также подключение к Интернету.</string>
+    <string name="btn_salir_impresion">Закрыть</string>
+    <string name="btn_salir_datafono">Закрыть и сохранить</string>
+    <string name="btn_imprimir">Печать</string>
+    <string name="re_imprimir">Повторная печать</string>
+    <string name="proceso_curso">Пожалуйста, подождите, идет процесс</string>
+    <string name="selec_impresora">Выберите принтер</string>
+    <string name="introducir_puerto_ip">Введите IP и порт</string>
+    <string name="error_impresion_intentar">Ошибка печати, повторите попытку</string>
+    <string name="texto_pruebas">*Тест успешно пройден*</string>
+    <string name="texto_pruebasCodigoBarras">ТЕСТ-ОК</string>
+    <string name="texto_numeroCaja">Касса №:</string>
+    <string name="texto_fecha">Дата:</string>
+    <string name="texto_numeroDeIdentificacion">Номер Идентификации:</string>
+    <string name="texto_numeroTransacionSencillo">Номер:</string>
+    <string name="texto_nombreTienda">МАГАЗИН</string>
+    <string name="compra_selfcheckout">Покупка совершена в SelfCheckout</string>
+    <string name="btn_prueba_datafono">Тест связи</string>
+    <string name="progress_seguir_pasos_datafono">Нажмите зеленую кнопку на терминале и следуйте инструкциям (%1$s)…</string>
+    <string name="progress_seguir_pasos_datafono_cliente">Нажмите зеленую кнопку на терминале и следуйте инструкциям…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_redeban" translatable="false">На терминале выберите опцию 2 и найдите ОТМЕНА, следуйте инструкциям…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_anulacion">Нажмите кнопку 6 на терминале, выберите опцию отмены и следуйте инструкциям…</string>
+    <string name="texto_tituloCertificadoRegalo" translatable="false">ПОДАРОЧНЫЙ СЕРТИФИКАТ</string>
+
+    <!-- TODO: VistaDeviceBluetoothSelectDialogFragment-->
+    <string name="select_impresora_blue">Выберите Bluetooth-принтер для использования</string>
+    <string name="dispositivo_bluetooth">Bluetooth-устройства</string>
+    <string name="mostrar_todos">Показать все</string>
+
+    <!-- TODO: Lottie-->
+    <string name="animacion_escanear_cedula">license_scanning.json</string>
+    <string name="animacion_splash_inicio">splash_inicio.lottie</string>
+    <string name="animacion_splash_inicio2">splash_inicio2.lottie</string>
+    <string name="animacion_inicio_sesion">inicio_session.json</string>
+    <string name="animacion_compra_realizada">animation_compra1.json</string>
+    <string name="animacion_here">animation_here.json</string>
+    <string name="animacion_buscar">animation_buscar.json</string>
+    <string name="animacion_datafono">datafono_animacion.json</string>
+    <string name="animacion_info">animation_information.lottie</string>
+    <string name="animacion_flecha_derecha_azul">animation_flecha_derecha_azul.json</string>
+    <string name="animacion_cara_enojada">animation_cara_enojada.json</string>
+    <string name="animacion_cara_neutral">animation_cara_neutral.json</string>
+    <string name="animacion_cara_feliz">animation_cara_feliz.json</string>
+
+    <!-- TODO: CantidadBolsasDialogFragment-->
+    <string name="et_hint_cantidad_bolsas">Количество сумок</string>
+    <string name="cantidad_de_bolsas">Количество сумок</string>
+    <string name="texto_cantidad_bolsas">Введите количество сумок, которые вы хотите приобрести</string>
+    <string name="texto_info_bolsas_agregadas">Добавлено %1$s сумок</string>
+    <string name="texto_info_bolsas_agregada">Добавлена сумка</string>
+    <string name="progress_consultando_bolsa">Добавление %1$s сумки…</string>
+    <string name="progress_consultando_bolsas">Добавление %1$s сумок…</string>
+    <string name="resumen_compra">Сводная информация о покупке</string>
+    <string name="btn_atras_bolsas">Назад</string>
+    <string name="btn_continuar_bolsas">Продолжить без сумки</string>
+    <string name="limite_bolsas">Вы не можете приобрести больше (%1$s) сумок</string>
+    <string name="btn_continuar_bolsas_cantidad">Продолжить с (1) сумкой</string>
+    <string name="btn_continuar_bolsas_cantidad_mas">Продолжить с (%1$s) сумками</string>
+
+    <!-- TODO: QrBancolombiaDialogFragment-->
+    <string name="btn_finalizar">Завершить покупку</string>
+    <string name="texto_finalizar_qr_bancolombia">После сканирования QR завершите покупку</string>
+    <string name="progress_generando_qr">Генерация QR…</string>
+    <string name="progress_tarjeta">Следуйте инструкциям по работе с датапомпьютером…</string>
+    <string name="error_crear_qr">Произошла ошибка с SVG-кодом QR, обратитесь к администратору.</string>
+    <string name="title_qr_dialogfragment">Оплата через ваш мобильный телефон</string>
+    <string name="message_qr_dialogfragment">Отсканируйте с помощью приложения Bancolombia или Nequi</string>
+
+    <!-- TODO: CambiarUrlDialogFragment-->
+    <string name="titleUrlDialogFragment">Изменить базовые URL-адреса</string>
+    <string name="msjUrlDialogFragment">Введите URL-адреса для служб</string>
+    <string name="msjUrlDialogFragment_in">Промежуточный URL (QR, RFID)</string>
+    <string name="msjUrlDialogFragment_nn">Не основной URL (Остальные службы)</string>
+    <string name="url_invalida">Неверный промежуточный URL</string>
+    <string name="url_invalida_nn">Неверный не основной URL</string>
+
+    <!-- TODO: DepatamentosDialogFrangment-->
+    <string name="select_departamento">Выберите отдел</string>
+    <string name="departamentos">Отделы</string>
+
+    <!-- TODO: CiudadesDialogFragment-->
+    <string name="select_cuidad">Выберите город</string>
+    <string name="cuidades">Города</string>
+
+    <!-- TODO: DescuentosClienteDialogFragment-->
+    <string name="select_descuento_compra">Выберите скидку для вашей покупки:</string>
+    <string name="select_descuento_medio_de_pago_compra">Выберите скидку/способ оплаты для вашей покупки</string>
+    <string name="medio_de_pago">Способ оплаты</string>
+    <string name="select_medio_de_pago_compra">Выберите способ оплаты для вашей покупки</string>
+    <string name="medio_de_pago_referido">Скидка/Способ оплаты по реферальной программе</string>
+    <string name="select_medio_de_pago_compra_referido">Выберите скидку/способ оплаты по реферальной программе для вашей покупки</string>
+    <string name="cupon_referido">Код купона (для сотрудника-референта)</string>
+    <string name="btn_validar_cupon">Проверить купон</string>
+    <string name="inserte_codigo_cupon">Введите код купона</string>
+    <string name="dialog_progress_validar_cupon">Проверка кода…</string>
+    <string name="title_quitar_del_carrito">Убрать продукт из корзины</string>
+    <string name="texto_quitar_del_carrito">УБЕРИТЕ ТОВАР ИЛИ ТОВАРЫ, КОТОРЫЕ ВЫ НЕ ЖЕЛАЕТЕ ПРИОБРЕСТИ, ИЗ ЯЩИКА</string>
+    <string name="texto_quitar_del_carrito_comprobar">Вы не убрали товар (%1$s) из ящика, пожалуйста, уберите товар.</string>
+    <string name="helper_tv_referido">Если у вас есть код референта, введите его здесь</string>
+    <string name="serial_seriales_registrados">Новые продукты не найдены.</string>
+
+    <!-- TODO: VerificarCodigoDialogFragment-->
+    <string name="tv_texto_codigo">Код</string>
+    <string name="btn_verificar_codigo">Проверить код</string>
+    <string name="tv_texto_helper_codigo">Введите код здесь и затем нажмите кнопку (Проверить код)</string>
+    <string name="btn_reenviar_codigo">Переотправить код</string>
+    <string name="btn_atras_verificacion">Назад</string>
+    <string name="title_dialog_verificacion">Проверка</string>
+    <string name="texto_dialog_verificacion">Пожалуйста, введите проверочный код, отправленный на (%1$s)
+    или на электронную почту (%2$s).</string>
+    <string name="ups_algo_mal">Упс! Что-то пошло не так</string>
+    <string name="ups_algo_mal_msj">К сожалению, мы столкнулись с проблемой во время вашего запроса.
+    Пожалуйста, попробуйте снова или обратитесь к кассе для получения дополнительной информации. Код (%1$s)</string>
+    <string name="ups_algo_mal_msj_tef">К сожалению, возникла проблема при обработке вашего запроса на терминале. Пожалуйста, обратитесь к консультанту в магазине. Код (%1$s)</string>
+    <string name="ups_algo_mal_msj_actualizar">К сожалению, мы столкнулись с проблемой при обновлении транзакции. Код (%1$s)</string>
+
+    <!-- TODO: Generales-->
+    <string name="ok">OK</string>
+    <string name="generico">Продолжить, общий клиент</string>
+    <string name="entiendo">Понятно</string>
+    <string name="cambiar_idioma_titulo" translatable="false">Изменить язык</string>
+    <string name="flecha_salir">Выйти</string>
+    <string name="flecha_continuar">Продолжить</string>
+    <string name="si">Да</string>
+    <string name="si_continuar">Да, продолжить</string>
+    <string name="no">Нет</string>
+    <string name="anular">Отменить</string>
+    <string name="no_incorrectos">Введите другой номер удостоверения личности</string>
+    <string name="retirado">Извлечено</string>
+    <string name="retirar_cajon">Готово, товар извлечен</string>
+    <string name="atras">Назад</string>
+    <string name="soy_yo">Да, это я</string>
+    <string name="continuar">Продолжить</string>
+    <string name="volver_inicio">Вернуться на главную</string>
+    <string name="certicado_regalo" translatable="false">Подарочный сертификат</string>
+    <string name="ir_a_pagar">Перейти к оплате</string>
+    <string name="ir_medio_pago">Перейти к методам оплаты</string>
+    <string name="agregar">Добавить</string>
+    <string name="error">Ошибка</string>
+    <string name="confirmar">Подтвердить</string>
+    <string name="atencion">Внимание</string>
+    <string name="cancelar">Отмена</string>
+    <string name="error_conexion_sb">Ошибка соединения с базовым веб-сервисом.</string>
+    <string name="error_conexion">Ошибка подключения: </string>
+    <string name="informacion">Информация</string>
+    <string name="pago_exitososo">Успешная оплата</string>
+    <string name="descuentos">Скидка %1$s</string>
+    <string name="salir">Выйти</string>
+    <string name="descuentos_medio_de_pago">Скидки/Способы оплаты</string>
+    <string name="aceptar">Принять</string>
+    <string name="buscar">Поиск</string>
+    <string name="entendido">Понятно</string>
+    <string name="reintentar">Повторить попытку</string>
+    <string name="positivo_anulacion">Отменить</string>
+    <string name="negativo_anulacion">Больше информации</string>
+    <string name="_ir">ПЕРЕЙТИ</string>
+    <string name="cerrar">Закрыть</string>
+    <string name="volver">Вернуться</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="credibanco">CrediBanco</string>
+    <string name="Redeban">Redeban</string>
+    <string name="ip_dns">IP/DNS</string>
+    <string name="cerrar_sesion">Выйти из учетной записи</string>
+    <string name="impresora_epson">Epson (Bluetooth/IP)</string>
+    <string name="log_activar">Activar Log</string>
+    <string name="log_desactivar">Desactivar Log</string>
+    <string name="impresora_bixolon">Bixolon (USB)</string>
+    <string name="puerto_invalido">Недопустимый порт</string>
+    <string name="autorizar">Авторизовать</string>
+    <string name="imprimir_info">Печать</string>
+    <string name="info_cajon" translatable="false">УДАЛИТЕ ВСЕ КРЮЧКИ И ПОМЕСТИТЕ ВСЕ ПРЕДМЕТЫ В ЯЩИК</string>
+    <string name="info_cajon_nuevos" translatable="false">УДАЛИТЕ КРЮЧКИ И ПОМЕСТИТЕ ВСЕ НОВЫЕ ПРЕДМЕТЫ В ЯЩИК</string>
+    <string name="info_cajon_ganchos" translatable="false">ЯЩИК ДЛЯ ВЕШАЛОК</string>
+    <string name="info_cajon_ropa" translatable="false">ЯЩИК ДЛЯ ОДЕЖДЫ</string>
+
+    <!-- TODO: Mensajes de voz del dispositivo-->
+    <string name="bienvenido_al_autopago">Добро пожаловать в самообслуживание</string>
+    <string name="voz_seleccione_caja">Выберите кассу для магазина, %1$s.</string>
+    <string name="ingrese_su_numero_cedula">Введите свой номер удостоверения личности</string>
+    <string name="voz_registro">Хотите зарегистрироваться?</string>
+    <string name="voz_cliente_generico">Хотите продолжить без данных?</string>
+    <string name="voz_confirmacion_de_datos_cliente">Подтвердите данные, которые вы видите на экране.</string>
+    <string name="voz_eliminar_productos_canasta">Извлеките все товары, которые вы не хотите приобрести, из ящика.</string>
+    <string name="voz_inserte_productos_canasta" translatable="false">Уберите крючки и поместите все предметы в ящик.</string>
+    <string name="voz_inserte_productos_canasta_nuevos" translatable="false">Уберите крючки и поместите все новые предметы в ящик.</string>
+    <string name="voz_medio_de_pago">Выберите способ оплаты.</string>
+    <string name="voz_medio_de_pago_otro">Выберите другой способ оплаты.</string>
+    <string name="voz_cantidad_articulos">%1$s товаров добавлено</string>
+    <string name="voz_cantidad_articulo">Товар добавлен</string>
+    <string name="voz_pago_tef">Нажмите зеленую кнопку датапомпьютера и следуйте инструкциям</string>
+    <string name="voz_anulacion_tef">Нажмите кнопку 2 на датапомпьютере и следуйте инструкциям</string>
+    <string name="voz_agradecimiento_compra">Спасибо за покупку. Не забудьте забрать все товары и чек. Также вы можете оценить ваш опыт с самообслуживанием.</string>
+    <string name="voz_califica_autopago">Оцените нашу систему самообслуживания.</string>
+    <string name="voz_codigo_verificacion">Введите код подтверждения, отправленный на мобильный телефон или
+    на электронную почту.</string>
+    <string name="voz_bolsas">Введите количество сумок, которые вы хотите приобрести для этой покупки.</string>
+    <string name="voz_qr_bancolombia">Оплатите со своего телефона, отсканируйте из приложения Bancolombia или Nequi.
+    После сканирования QR завершите покупку.</string>
+    <string name="btn_sin_datos" translatable="false">Продолжить без данных</string>
+    <string name="texto_sin_datos" translatable="false">Хотите продолжить без ввода идентификационного номера?</string>
+
+    <!-- TODO: politicasGEF -->
+    <string-array name="titulos_politicas_gef">
+        <item>УВАЖАЕМЫЙ ПОКУПАТЕЛЬ</item>
+        <item>ПОЛИТИКА ОБМЕНА</item>
+        <item>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</item>
+        <item>ГАРАНТИЙНАЯ ПОЛИТИКА</item>
+    </string-array>
+    <string-array name="texto_politicas_gef">
+        <item>Если возникают несоответствия с вашим чеком или покупкой, у вас есть максимум 7 календарных
+            дней для подачи жалобы, используя нашу форму PQRS. Этот магазин предоставляет формы запросов,
+            жалоб, претензий и предложений (PQRS). Если вам необходимо подать PQRS, попросите форму у
+            администратора, помощника или кассира магазина; укажите факты или причины недовольства, четко
+            указав дату и время событий, и, по возможности, людей, непосредственно свидетельствовавших о
+            вашей жалобе. Запросите копию, подписанную ответственным лицом магазина для приема PQRS. Если
+            формы недоступны или нет ответственного за прием PQRS, свяжитесь со службой бесплатной национальной
+            горячей линии компании 01 8000 517 536 или (604) 540 73 38 или отправьте электронное письмо на
+            адрес servicioalcliente@crystal.com.co и сообщите об этом в Управление промышленности и торговли
+            по следующим телефонам: бесплатная национальная линия 01 8000 910 165, и в Боготе 651 2140,
+            электронная почта: info@sic.gov.co или на веб-сайте www.sic.gov.co Контактные данные: Адрес:
+            Carrera 48 nro 52 sur 81, Sabaneta, Antioquia. Электронная почта: proteccionbasedatos@crystal.com.co -
+            Телефон: (604) 6048294</item>
+        <item>Срок обмена: 30 календарных дней после покупки (дата чека). Для обмена товары должны быть
+            в идеальном состоянии, чистые, неиспользованные, с бирками и ярлыками. Товар не должен быть
+            изменен или нарушен в своей первоначальной упаковке. Не разрешается обмен товаров для личного
+            использования (трусы, стринги, боксеры, трусики, массажер, термосы, носки, маски, воротники,
+            рукава, кепки или другие товары для защиты и личной гигиены), ювелирные изделия, бижутерия,
+            средства личной гигиены и косметика. Можно обменять носки, топы, бюстгальтеры и купальники,
+            если они сохранили бирки, этикетки и защитную упаковку. Вещи Runproof, Furor и Intertex не подлежат
+            обмену или гарантии.</item>
+        <item>Общество CRYSTAL S.A.S, идентифицируемое номером NIT 890.901.672–5, информирует вас через
+            это оповещение о конфиденциальности, в соответствии с положениями статей 9 и 12 Закона 1581
+            от 2012 года и другими соответствующими статьями и нормами, оно будет ответственным за сбор
+            и обработку предоставленных вами персональных данных с целью осуществления деятельности,
+            связанной с общественными целями предприятия и административного развития, в особенности для
+            целей выставления счетов, для выполнения налоговых обязательств, для проведения аналитики поведения
+            клиентов с целью определения потребительских привычек с целью улучшения опыта клиентов с
+            брендами Crystal S.A.S; вести реестр активных и неактивных клиентов; контактировать с клиентами
+            или потенциальными клиентами через различные каналы (электронная почта, физическая почта,
+            через колл-центр и т. д.) в коммерческих, взыскательских или юридических целях при необходимости;
+            принимать, обрабатывать и решать запросы, жалобы, претензии и/или предложения, представленные
+            клиентами или будущими клиентами; проводить академические мероприятия совместно с государственными
+            или частными организациями в области маркетинга; таким образом, хранимые данные обрабатываются
+            только для вышеуказанных целей. Кроме того, как владельцу персональных данных, обрабатываемых
+            нашей компанией, вы принимаете все права и гарантии, предусмотренные законом и конституцией, в
+            частности право на доступ к персональным данным, хранимым этой компанией, обновление этих данных,
+            запрос корректировки или удаления данных, а также отзыв согласия на их обработку. Кроме того,
+            компания CRYSTAL S.A.S сообщает вам, что вы можете ознакомиться с полной политикой обработки
+            персональных данных, применимой к базе данных, в которой хранятся ваши сведения, на веб-сайте
+            www.crystal.com.co. Контактные данные: Адрес: Carrera 48 nro 52 sur 81, Sabaneta, Antioquia.
+            Электронная почта: proteccionbasedatos@crystal.com.co - Телефон: (604) 6048294</item>
+        <item>Гарантийный срок по качеству: 3 месяца после покупки (дата чека). Для удовлетворения вашего
+            запроса товар не должен быть изменен покупателем или изменен из его первоначального состояния,
+            и он должен быть в хорошем состоянии и чистым. Для кремов, скрабов, масел, розовых вод, свечей
+            и освежителей воздуха гарантия применяется в случае, если они вызывают проблемы со здоровьем у
+            пользователя. Если дефект не соответствует условиям возврата по гарантии. Наши продукты, если
+            не указано обратное на этикетке, не предназначены для использования в качестве форменной одежды
+            и/или корпоративной одежды или аналогичных.</item>
+    </string-array>
+
+    <!-- TODO: NoCambiarIdioma -->
+    <string name="codigo_ya_redimido">El código de verificación ya fue redimido</string>
+    <string name="codigo_ya_expiro">El código de verificación ya expiró</string>
+    <string name="codigo_no_existe">El código de verificación no existe</string>
+    <string name="pago_no_encontrado_qr_bancolombia">No se ha encontrado el pago.</string>
+    <string name="texto_no_encuentra_pago_tef">No se encuentra el pago</string>
+    <string name="btn_cambiar_idioma" translatable="false">Cambiar idioma / Change language</string>
+    <string name="texto_cambiar_idioma" translatable="false">¿Quieres cambiar el idioma? / Do you want to change the language?</string>
+    <string name="seleccion_lenguaje" translatable="false">Seleccione el lenguaje de su preferencia / Select the language of your preference</string>
+    <string-array name="language_options">
+        <item>Español / Spanish - Colombia</item>
+        <item>Inglés / English - Estados Unidos / United States</item>
+        <item>Francés / French - Francia / France</item>
+        <item>Ruso / Russian - Rusia / Russia</item>
+        <item>Mandarín - China</item>
+    </string-array>
+</resources>

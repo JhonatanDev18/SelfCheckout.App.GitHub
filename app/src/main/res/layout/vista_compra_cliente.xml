@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.VistaCompraCliente">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentProceso"
+        android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaProcesoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/vista_fragment_proceso" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentLogoMarca"
+        android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaLogoMarcaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/glSeparadorLogoMarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/vista_fragment_logo_marca" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorLogoMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/separador_logo_pantalla" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorPrincipal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvTituloSaludoCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/tv_titulo_saludo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/vcomprac_texto_size_saludo_cliente"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cvInfoCliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnReiniciar" />
+
+    <TextView
+        android:id="@+id/tvComplementoTituloSaludoCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/tv_titulo_saludo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloSaludoCliente"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintStart_toEndOf="@+id/tvTituloSaludoCliente"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloSaludoCliente" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        style="@style/fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:drawableStart="@drawable/flecha_izquierda"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:drawablePadding="4dp"
+        android:visibility="gone"
+        android:text="@string/btn_reiniciar"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cvConsultaProducto" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvInfoCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="6sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloSaludoCliente"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoInfoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_cedula_cliente"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCedulaCliente"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCedula"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCedula"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_celular_cliente"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliConsultaCedula">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCelularCliente"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCelular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCelular"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_correo_cliente"
+                android:layout_margin="4dp"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliConsultaCelular">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreoCliente"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCorreo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCorreo"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConsultaProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="0sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoConsultaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_fondo_compra"
+            android:padding="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliCedula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:hint="@string/et_consultar_producto"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnConsultarProductos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/vector_codigo_de_barras">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConsultaProducto"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/vcomprac_texto_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliCedula"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliCedula" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnConsultarProductos"
+                style="@style/fuente"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:background="@drawable/rounded_button_verde_claro"
+                android:elevation="4dp"
+                android:text="@string/btn_consultar_cliente"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tliCedula"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConsultaProductop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/color_fondo_compra"
+        app:cardCornerRadius="0sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/cvConsultaProducto"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoCompra"
+            android:layout_width="match_parent"
+            android:background="@color/color_fondo_compra"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvVolverEmpezar"
+                style="@style/LinkText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/reiniciar"
+                android:drawablePadding="4dp"
+                android:text="@string/btn_volver_a_empezar"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/vfhp_texto_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SmallSp" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentHeaderProductos"
+                android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaHeaderProductosFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentResumenCompra"
+                tools:ignore="MissingConstraints"
+                tools:layout="@layout/vista_fragment_header_producto" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scrollbarSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbarThumbVertical="@color/black"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/btnContinuarCompra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentHeaderProductos"
+                tools:listitem="@layout/vista_recyclerview_productos" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentHeaderResumenCompra"
+                android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaHeaderResumenCompraFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolverEmpezar"
+                tools:ignore="MissingConstraints"
+                tools:layout="@layout/vista_fragment_header_resumen_compra" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragmentResumenCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentHeaderResumenCompra">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rlFondoBonoResumenCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gris_fondo_productos">
+
+                    <TextView
+                        android:id="@+id/tvNumeroArticulos"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_numero_articulos"
+                        android:textColor="@color/color_texto"
+                        android:textSize="@dimen/vfrc_texto_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.3" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotal"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_subtotal"
+                        android:textColor="@color/color_texto"
+                        android:textSize="@dimen/vfrc_texto_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvNumeroArticulos"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintTop_toTopOf="@+id/tvNumeroArticulos" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <TextView
+                        android:id="@+id/tvTotalDescuento"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_total_descuento"
+                        android:textColor="@color/color_texto"
+                        android:textSize="@dimen/vfrc_texto_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvSubtotal"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintTop_toTopOf="@+id/tvSubtotal" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH3"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.75" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPagar"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_total_pagar"
+                        android:textColor="@color/color_texto"
+                        android:textSize="@dimen/vfrc_texto_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTotalDescuento"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintTop_toTopOf="@+id/tvTotalDescuento" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnContinuarCompra"
+                style="@style/fuente"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:elevation="4dp"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:background="@drawable/rounded_button_verde"
+                android:drawablePadding="4dp"
+                android:drawableEnd="@drawable/flecha_derecha"
+                android:text="@string/btn_continuar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTextoLecturaArticulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:drawableStart="@drawable/campana_roja"
+        android:text="@string/texto_consulta_articulo"
+        android:textColor="@color/rojo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvInfoCliente" />
+
+    <Button
+        android:id="@+id/btnNuevosArticulos"
+        style="@style/fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_verde_claro"
+        android:drawableEnd="@drawable/new_article"
+        android:drawableTint="@color/black"
+        android:drawablePadding="4dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="26dp"
+        android:paddingEnd="26dp"
+        android:text="@string/btn_nuevos_articulos"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoLecturaArticulo" />
+
+    <TextView
+        android:id="@+id/tvTextoLecturaEliminacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:drawableStart="@drawable/campana_roja"
+        android:text="@string/texto_eliminar_articulo"
+        android:textColor="@color/rojo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnElimarArticulos"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnElimarArticulos"
+        style="@style/fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_verde_claro"
+        android:drawableEnd="@drawable/retirar_article"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/black"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/btn_elimar_articulos"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvTextoNuevasBolsas"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuevosArticulos" />
+
+    <TextView
+        android:id="@+id/tvTextoNuevasBolsas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:drawableStart="@drawable/campana_roja"
+        android:text="@string/texto_mas_bolsas"
+        android:textColor="@color/rojo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnMasBolsas"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMasBolsas"
+        style="@style/fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button_verde_claro"
+        android:drawableEnd="@drawable/vector_bolsa_blanca"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/black"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:text="@string/btn_mas_bolsas"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorPrincipal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

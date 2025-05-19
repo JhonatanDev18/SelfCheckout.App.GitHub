@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clClienteConsulta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.dialogfragment.VistaCodigoVerificacionDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseVerificarCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSeguridad"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/proteger_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseVerificarCodigo" />
+
+    <TextView
+        android:id="@+id/tvTextoVerificarCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/texto_dialog_verificacion"
+        android:textColor="@color/color_texto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSeguridad" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCodigoVerificacionOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/tv_texto_codigo"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:helperText="@string/tv_texto_helper_codigo"
+        app:helperTextTextColor="@color/rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoVerificarCodigo"
+        app:startIconDrawable="@drawable/enviar_mensajes_texto">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCodigoOTP"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textSize="@dimen/vl_texto_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCodigoVerificacionOTP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCodigoVerificacionOTP" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnVerificarCodigoOTP"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:text="@string/btn_verificar_codigo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tliCodigoVerificacionOTP"
+        app:layout_constraintStart_toStartOf="@+id/tliCodigoVerificacionOTP"
+        app:layout_constraintTop_toBottomOf="@+id/tliCodigoVerificacionOTP" />
+
+    <Button
+        android:id="@+id/btnReenviarOTP"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:elevation="4dp"
+        android:text="@string/btn_reenviar_codigo"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerificarCodigoOTP"
+        app:layout_constraintStart_toStartOf="@+id/btnVerificarCodigoOTP"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificarCodigoOTP" />
+
+    <Button
+        android:id="@+id/btnAtrasOTP"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/flecha_izquierda"
+        android:background="@drawable/rounded_button_blanco"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnReenviarOTP"
+        app:layout_constraintStart_toStartOf="@+id/btnReenviarOTP"
+        app:layout_constraintTop_toBottomOf="@+id/btnReenviarOTP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

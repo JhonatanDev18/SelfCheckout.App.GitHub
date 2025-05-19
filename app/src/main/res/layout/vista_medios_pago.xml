@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.VistaMediosPago">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentProceso"
+        android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaProcesoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/vista_fragment_proceso" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentLogoMarca"
+        android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaLogoMarcaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/glSeparadorLogoMarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/vista_fragment_logo_marca" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorLogoMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/separador_logo_pantalla" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliMedioPago"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/texto_medio_de_pago_seleccionado"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCuadrantePrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentProceso"
+        app:startIconDrawable="@drawable/billetera">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMedioPago"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tliMedioPago"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliMedioPago" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEditarMedioPago"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:drawableEnd="@drawable/editar_negro"
+        android:background="@drawable/rounded_button_verde_claro"
+        android:elevation="4dp"
+        android:drawableTint="@color/black"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_cambiarmp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tliMedioPago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCuadrantePrincipal"
+        app:layout_constraintTop_toTopOf="@+id/tliMedioPago" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPrincipalMp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="0sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliMedioPago"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoConsultaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_fondo_compra"
+            android:padding="4dp">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentHeaderResumenCompra"
+                android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaHeaderDescripResumenFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/fragmentResumenCompra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout="@layout/vista_fragment_header_resumen_compra_descrip" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragmentResumenCompra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@+id/btnAtrasMedioPago"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rlFondoBonoResumenCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gris_fondo_productos">
+
+                    <TextView
+                        android:id="@+id/tvNumeroArticulosMP"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_numero_articulos"
+                        android:textColor="@color/color_texto"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.2" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotalMP"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_subtotal"
+                        android:textColor="@color/color_texto"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvNumeroArticulosMP"
+                        app:layout_constraintEnd_toStartOf="@+id/tvTotalDescuentoMP"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintTop_toTopOf="@+id/tvNumeroArticulosMP" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.4" />
+
+                    <TextView
+                        android:id="@+id/tvTotalDescuentoMP"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_total_descuento"
+                        android:textColor="@color/rojo"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvSubtotalMP"
+                        app:layout_constraintEnd_toStartOf="@+id/tvTotalPagarMP"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3" />
+
+                    <TextView
+                        android:id="@+id/tvSeparadorH3"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPagarMP"
+                        style="@style/fuente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_total_pagar"
+                        android:textColor="@color/color_texto"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTotalDescuentoMP"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion4"
+                        app:layout_constraintTop_toTopOf="@+id/tvTotalDescuentoMP" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glInternoSeparacion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.8" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentHeaderProductos"
+                android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaHeaderDescripProductosFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout="@layout/vista_fragment_header_producto_descrip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductosMP"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scrollbarSize="12dp"
+                android:scrollbarThumbVertical="@color/black"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/fragmentHeaderResumenCompra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentHeaderProductos"
+                tools:listitem="@layout/vista_recycler_view_productos_descrip" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCuadrante2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <Button
+                android:id="@+id/btnAtrasMedioPago"
+                style="@style/fuente"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/flecha_izquierda"
+                android:background="@drawable/rounded_button_blanco"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:drawablePadding="4dp"
+                android:text="@string/btn_atras_medio_pago"
+                android:textAllCaps="false"
+                android:textColor="@color/color_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineCuadrante2"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/btnPagar"
+                style="@style/fuente"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_button_verde"
+                android:elevation="4dp"
+                android:text="@string/btn_pagar"
+                android:textAllCaps="false"
+                android:textColor="@color/color_proceso"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guidelineCuadrante2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCuadrantePrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvHeaderProductos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlFondoBono"
+        android:background="@color/azul_claro"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCodigoBarrasHeader"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_ean_producto"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/vfhp_texto_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSeparadorH1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion1"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoSeparacion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvDescripcionHeader"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_descripcion_producto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vfhp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCodigoBarrasHeader"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion1"
+            app:layout_constraintTop_toTopOf="@+id/tvCodigoBarrasHeader" />
+
+        <TextView
+            android:id="@+id/tvSeparadorH2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion2"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoSeparacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tvPrecioHeader"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/tv_precio_producto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vfhp_texto_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDescripcionHeader"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion2"
+            app:layout_constraintTop_toTopOf="@+id/tvDescripcionHeader" />
+
+        <TextView
+            android:id="@+id/tvSeparadorH3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoSeparacion3"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoSeparacion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <TextView
+            android:id="@+id/tvIndicadorHeader"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_indicador_producto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vfhp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrecioHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glInternoSeparacion3"
+            app:layout_constraintTop_toTopOf="@+id/tvPrecioHeader" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

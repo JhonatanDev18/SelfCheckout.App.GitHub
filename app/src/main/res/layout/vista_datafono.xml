@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.VistaDatafono">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentLogoMarca"
+        android:name="com.crystal.selfcheckoutapp.Vista.fragment.VistaLogoMarcaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/glSeparadorLogoMarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/vista_fragment_logo_marca" />
+
+    <RadioGroup
+        android:id="@+id/rgOpcionesDatafono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glSeparadorLogoMarca">
+
+        <RadioButton
+            android:id="@+id/rbCredibanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/credibanco"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbRedeban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/Redeban"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorLogoMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliUsuarioDatafono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/et_usuario_datafono"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgOpcionesDatafono"
+        app:startIconDrawable="@drawable/ic_usuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsuarioDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilUsuario" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliPassDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_pass_datafono"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintStart_toStartOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintTop_toBottomOf="@+id/tliUsuarioDatafono"
+        app:startIconDrawable="@drawable/candado_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilPassLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilPassLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCodigoDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/codigo_datafono"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliPassDatafono"
+        app:startIconDrawable="@drawable/datafono_confi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCodigoDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCodigoDatafono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCodigoDatafono" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCodigoUnicoDatafono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/codigo_unico_datafono"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tliCodigoDatafono"
+        app:startIconDrawable="@drawable/codigo_unico_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCodigoUnicoDatafono"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCodigoDatafono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCodigoDatafono" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparadorBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnSalirDatafono"
+        style="@style/fuente"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/btn_salir_datafono"
+        android:drawableStart="@drawable/arrow_atras"
+        android:textColor="@color/white"
+        android:textSize="@dimen/vcomprac_texto_size"
+        android:textStyle="bold"
+        android:theme="@style/MiBotonRaisedGris"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparadorBotones"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPruebaDatafono"
+        style="@style/fuente"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/btn_prueba_datafono"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/terminal_punto_venta"
+        android:textSize="@dimen/vcomprac_texto_size"
+        android:textStyle="bold"
+        android:theme="@style/MiBotonRaised"
+        app:backgroundTint="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/glSeparadorBotones" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliPassSupervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/et_pass_supervisor"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintStart_toStartOf="@+id/tliUsuarioDatafono"
+        app:layout_constraintTop_toBottomOf="@+id/tliCodigoUnicoDatafono"
+        app:startIconDrawable="@drawable/candado_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassSupervisor"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilPassLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilPassLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

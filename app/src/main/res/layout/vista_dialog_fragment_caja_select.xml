@@ -1,0 +1,106 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTiendasSelect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.VistaLogin">
+
+    <ImageView
+        android:id="@+id/ivCloseCaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloConsultaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cajas"
+        android:textColor="@color/color_texto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseCaja" />
+
+    <TextView
+        android:id="@+id/tvTextoCaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/selecciona_n_dispositivo"
+        android:textColor="@color/color_texto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloConsultaCliente" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliBuscadorTiendas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/buscar_caja"
+        app:boxStrokeColor="@color/azul"
+        app:layout_constraintEnd_toEndOf="@+id/tvTextoCaja"
+        app:layout_constraintStart_toStartOf="@+id/tvTextoCaja"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoCaja"
+        app:startIconDrawable="@drawable/vector_buscar"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etBuscadorTiendas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="0"
+            android:background="@color/white"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/lvTiendasSelect"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivPasoUno"
+        app:layout_constraintEnd_toEndOf="@+id/tliBuscadorTiendas"
+        app:layout_constraintStart_toStartOf="@+id/tliBuscadorTiendas"
+        app:layout_constraintTop_toBottomOf="@+id/tliBuscadorTiendas" />
+
+    <ProgressBar
+        android:id="@+id/pbTiendasSelect"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lvTiendasSelect"
+        app:layout_constraintEnd_toEndOf="@+id/lvTiendasSelect"
+        app:layout_constraintStart_toStartOf="@+id/lvTiendasSelect"
+        app:layout_constraintTop_toTopOf="@+id/lvTiendasSelect" />
+
+    <ImageView
+        android:id="@+id/ivPasoUno"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/crystal_peque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lvTiendasSelect"
+        app:layout_constraintStart_toStartOf="@+id/lvTiendasSelect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

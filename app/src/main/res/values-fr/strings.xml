@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="version_apk">V.4.3.4.0</string>
+    <string name="app_name">Self Checkout</string>
+    <string name="app_name_splash">Self Checkout…</string>
+    <string name="titulo_config">Configurer</string>
+
+    <!-- TODO: VistaLogin-->
+    <string name="usuario">Utilisateur</string>
+    <string name="contrasena">Mot de passe</string>
+    <string name="iniciar_sesion">Se connecter</string>
+    <string name="usuario_requerido">Utilisateur requis</string>
+    <string name="contrasena_requerido">Mot de passe requis</string>
+    <string name="progress_iniciando_sesion">Connexion en cours…</string>
+    <string name="alertaPermisosMemoriaInterna">Pour le bon fonctionnement de l\'application Self Checkout, vous devez accorder les autorisations</string>
+    <string name="progress_cargando">Chargement…</string>
+    <string name="progress_escaneando">Scan en cours…</string>
+    <string name="progress_anulando">Annulation…</string>
+    <string name="la_transaccion_ya_anulada">Cette transaction est déjà annulée.</string>
+    <string name="progress_retiro">Vérification…</string>
+    <string name="progress_leyendo">Chargement…</string>
+    <string name="opcion_deshabilitada">Option désactivée.</string>
+    <string name="progress_consultando_cupo_empleado">Consultation du quota employé…</string>
+    <string name="progress_reenviando">Renvoi du code…</string>
+    <string name="sin_cajas_disponible">Le magasin %1$s n\'a pas de caisses disponibles.</string>
+    <string name="caja_cerrada">La caisse %1$s est fermée</string>
+    <string name="buscar_caja">Rechercher une caisse</string>
+    <string name="buscar_ciudad">Rechercher une ville</string>
+    <string name="buscar_departamento">Rechercher un département</string>
+    <string name="cajas">Caisse magasin %1$s</string>
+    <string name="titulo_recomendacion_carga">Information</string>
+    <string name="selecciona_n_dispositivo">Sélectionnez la caisse pour ce dispositif</string>
+    <string name="parametros_no_encontrados">Paramètres non trouvés</string>
+    <string name="mensaje_recomendacion_carga">Les paramètres d\'impression et de paiement TEF sont en cours de chargement. Self Checkout se fermera pour terminer cette configuration.</string>
+    <string name="error_crear_directorio">Un problème est survenu lors de la création du répertoire pour enregistrer la configuration XML. Veuillez contacter l\'administrateur.</string>
+    <string name="error_lectura_parametros">Erreur de lecture des paramètres suivants : %1$s. Veuillez contacter immédiatement l\'administrateur.</string>
+    <string name="msj_alerta_apertura">La date d\'ouverture %1$s de la caisse %2$s ne correspond pas à la date du système %3$s</string>
+
+    <!-- TODO: VistaConsultaCliente-->
+    <string name="texto_consulta_cliente_titulo">ENTREZ VOTRE NUMÉRO DE CARTE D\'IDENTITÉ</string>
+    <string name="texto_consulta_cliente">Entrez votre numéro de carte d\'identité et appuyez sur le bouton Entrer</string>
+    <string name="et_cedula" translatable="false">Numéro de carte d\'identité</string>
+    <string name="tv_titulo_instrucciones">ÉTAPE PAR ÉTAPE</string>
+    <string name="tv_instruccio_1">1. Entrez votre numéro d\'identité.</string>
+    <string name="tv_instruccio_2">2. Mettez tous les articles que vous souhaitez emporter dans le tiroir.</string>
+    <string name="tv_instruccio_3">3. Sélectionnez votre mode de paiement préféré et vous avez terminé.</string>
+    <string name="btn_cliente_generico">Si vous ne souhaitez pas utiliser votre document, cliquez ici</string>
+    <string name="btn_consultar_cliente">Entrer</string>
+    <string name="tv_titulo_bienvenido">Bienvenue !</string>
+    <string name="texto_cerrar_sesion">Êtes-vous sûr de vouloir vous déconnecter ?</string>
+    <string name="progress_consultando_cedula">Consultation de la carte d\'identité en cours…</string>
+    <string name="progress_consultando_ultima_tef">Consultation…</string>
+    <string name="confirmacion_de_datos">Confirmation des données</string>
+    <string name="texto_confirmacion_de_datos">Confirmez si les données affichées à l\'écran sont correctes. Est-ce vous ? Remarque : Si elles ne sont pas correctes, veuillez vous rendre à une caisse pour mettre à jour vos données.</string>
+    <string name="tv_cedula_cliente">Numéro de carte d\'identité</string>
+    <string name="tv_nombre_cliente">Nom</string>
+    <string name="tv_celular_cliente">Numéro de téléphone portable</string>
+    <string name="tv_correo_cliente">Adresse e-mail</string>
+    <string name="error_cliente_no_existe">Erreur, ce client n\'est pas trouvé dans CEGID.</string>
+    <string name="_cliente">CONSUMIDOR</string>
+    <string name="_generico">FINAL</string>
+    <string name="ninguno">Aucun</string>
+    <string name="cedula_ciudadania_letra">CC</string>
+    <string name="key_intent_cliente">Client</string>
+    <string name="key_intent_productos">Produits</string>
+    <string name="key_intent_descuentos">Réductions</string>
+    <string name="key_intent_factura">Facture</string>
+    <string name="key_intent_ultima_tef">Dernière TEF</string>
+    <string name="key_intent_reconeccion">Reconnexion</string>
+    <string name="key_intent_cliente_nuevo">Nouveau client</string>
+    <string name="crear_cliente">S\'inscrire</string>
+    <string name="sin_registro">Sans enregistrement</string>
+    <string name="crear_cliente_confirmar">Confirmez que la carte d\'identité est : </string>
+    <string name="continuar_cliente_generico">Votre carte d\'identité n\'est pas enregistrée. Voulez-vous continuer sans données ?. Remarque : n\'oubliez pas que pour enregistrer vos données, vous devez vous rendre à une caisse.</string>
+    <string name="info_usar_app">Pour utiliser le système de libre-service, vous devez continuer sans données ou être enregistré. Pour plus d\'informations, veuillez vous rendre à une caisse.</string>
+    <string name="identificacion_invalida">Numéro de carte d\'identité incorrect</string>
+    <string name="tab_consultaCliente">Consultation</string>
+    <string name="tab_compraCliente">Numérisation</string>
+    <string name="tab_medioPago">Moyen de paiement</string>
+    <string name="tab_tirilla">Prêt</string>
+    <string name="configuraciones">Paramètres</string>
+    <string name="selecciona_configuracion">Sélectionnez l\'une des configurations suivantes</string>
+    <string name="aprobacion">Approbation :</string>
+    <string name="seleccione_opcion_tef">Transaction TEF (%1$s)</string>
+    <string name="texto_seleccione_opcion_tef">Voulez-vous annuler la transaction TEF ou en savoir plus ?</string>
+    <string name="texto_no_hay_ultimo_pago_tef" translatable="false">Aucun dernier paiement enregistré.</string>
+    <string name="error_caracter_especial_nombre">Il y a un problème avec vos informations personnelles. Veuillez vous rendre à une caisse pour corriger vos données.</string>
+
+    <!-- TODO: AnularTefDialogFragment -->
+    <string name="titulo_anulacion">Annulation</string>
+    <string name="texto_anulacion">Sélectionnez la transaction TEF que vous souhaitez annuler.</string>
+    <string name="hint_recibo">Numéro de reçu.</string>
+    <string name="btn_anular">Annuler</string>
+    <string name="et_invalido">Entrez le numéro de reçu.</string>
+
+    <!-- TODO: AutorizacionSimpleDialogFragment -->
+    <string name="auto_cerrar_sesion">Un administrateur doit autoriser la fermeture du SelfCheckout.</string>
+    <string name="auto_configurar">Un administrateur doit autoriser la configuration du SelfCheckout.</string>
+    <string name="autorizacion">Autorisation</string>
+    <string name="usurio_requerido">Utilisateur requis</string>
+    <string name="pass_requerido">Le mot de passe est requis</string>
+    <string name="error_autorizacion_">Erreur d\'autorisation :</string>
+    <string name="consultando_autorizacion">Autorisation en cours…</string>
+    <string name="tipo_usuario_invalido">Nom d\'utilisateur et mot de passe incorrects.</string>
+    <string name="escaneo_cancelado">Numérisation annulée</string>
+
+    <!-- TODO: Lector de codigo de barras-->
+    <string name="linterna_encendida">Allumer la lampe de poche</string>
+    <string name="linterna_apagada">Éteindre la lampe de poche</string>
+    <string name="msj_scan_barcode">Placez un code-barres à l\'intérieur du rectangle de la caméra pour le numériser.</string>
+
+    <!-- TODO: VistaClienteDetalle-->
+    <string name="actualizar_cliente">Mettre à jour les données personnelles</string>
+    <string name="autopago_tiendas">Paiement libre-service dans les magasins</string>
+    <string name="cliente_nuevo">Enregistrement</string>
+    <string name="btn_continuar">Continuer</string>
+    <string name="btn_encerder_rfid">Prêt, articles dans le tiroir</string>
+    <string name="et_cedula_detalle">Numéro d\'identification</string>
+    <string name="btn_generar_qr">Générer QR Bancolombia</string>
+    <string name="et_nombre_detalle">Prénoms</string>
+    <string name="et_apellido_detalle">Noms de famille</string>
+    <string name="et_fecha_nacimiento_detalle">Date de naissance</string>
+    <string name="et_correo_detalle">Adresse e-mail</string>
+    <string name="et_celular_detalle">Numéro de téléphone portable</string>
+    <string name="et_direccion_detalle">Adresse de résidence</string>
+    <string name="et_departamento_detalle">Département</string>
+    <string name="texto_tipo_documento">Type de document</string>
+    <string name="et_ciudad_detalle">Ville</string>
+    <string name="rb_genero_masculino">Masculin</string>
+    <string name="rb_genero_femenino">Féminin</string>
+    <string name="tv_seleccione_departamento">Sélectionnez le département</string>
+    <string name="tv_seleccione_ciudad">Sélectionnez la ville</string>
+    <string name="tv_titulo_genero">Genre</string>
+    <string name="tv_titulo_fecha_nacimiento">Date de naissance</string>
+    <string name="texto_sin_autorizacion">Vous devez autoriser l\'utilisation et le traitement des données pour continuer</string>
+    <string name="autorizacion_datos_personales">J\'autorise Crystal S.A.S à utiliser et traiter mes données personnelles</string>
+    <string name="seleccione_tipo_documento">Sélectionnez le type de document</string>
+    <string name="registro_nombre_requerido">Entrez votre prénom</string>
+    <string name="registro_apellido_requerido">Entrez votre nom de famille</string>
+    <string name="registro_fecha_nacimiento_requerido">Entrez votre date de naissance</string>
+    <string name="registro_fecha_nacimiento_requerido_valida">Entrez une date de naissance valide</string>
+    <string name="registro_fecha_nacimiento_requerido_valido">Vous devez avoir plus de 15 ans</string>
+    <string name="registro_correo_y_celular_requerido">Entrez votre adresse e-mail ou votre numéro de téléphone portable</string>
+    <string name="registro_correo_requerido_valido">Entrez une adresse e-mail valide</string>
+    <string name="registro_celular_requerido">Entrez votre numéro de téléphone portable</string>
+    <string name="registro_celular_requerido_valido">Entrez un numéro de téléphone portable valide</string>
+    <string name="registro_direccion_requerido">Entrez votre adresse de résidence</string>
+    <string name="registro_genero_requerido">Entrez votre genre</string>
+    <string name="registro_departamento_requerido">Entrez le département de résidence</string>
+    <string name="registro_ciudad_requerido">Entrez la ville de résidence</string>
+    <string name="departamento_requerido">Sélectionnez d\'abord le département</string>
+    <string name="progress_registrando_cliente">Enregistrement des informations en cours…</string>
+    <string-array name="documentos_identidad">
+        <item>Carte d\'identité</item>
+        <item>NIT</item>
+        <item>Passeport</item>
+        <item>Carte d\'identité du Costa Rica</item>
+        <item>Cédula juridica</item>
+        <item>DIMEX</item>
+        <item>NITE</item>
+        <item>Étranger</item>
+    </string-array>
+
+    <!-- TODO: VistaCompraCliente-->
+    <string name="et_consultar_producto">Entrez le code du produit</string>
+    <string name="tv_titulo_numero_cedula">Numéro d\'identité :</string>
+    <string name="tv_titulo_correo">Courriel :</string>
+    <string name="tv_titulo_celular">Portable :</string>
+    <string name="tv_titulo_saludo">SALUT,</string>
+    <string name="texto_consulta_articulo">Voulez-vous ajouter de nouveaux articles ?</string>
+    <string name="texto_mas_bolsas">Voulez-vous ajouter plus de sacs ?</string>
+    <string name="texto_eliminar_articulo">Voulez-vous retirer un article ?</string>
+    <string name="tv_ean_producto">Code-barres</string>
+    <string name="tv_descripcion_producto">Description</string>
+    <string name="tv_cantidad_producto">Quantité</string>
+    <string name="tv_valor_producto">Valeur</string>
+    <string name="tv_precio_producto">Prix unitaire</string>
+    <string name="tv_descuento_producto" translatable="false">Remise</string>
+    <string name="tv_total_producto">Montant à payer</string>
+    <string name="tv_precio_producto_mp">Montant à payer (remises ou promotions)</string>
+    <string name="tv_indicador_producto">Indicateur (remises ou promotions)</string>
+    <string name="tv_descuento_tarifa_producto">Remise Tarif</string>
+    <string name="tv_titulo_valor_final_producto">Valeur finale :</string>
+    <string name="tv_numero_articulos">Nombre d\'articles</string>
+    <string name="tv_subtotal">Sous-total</string>
+    <string name="tv_total_descuento">Total de remises</string>
+    <string name="btn_nuevos_articulos">Ajouter de nouveaux articles</string>
+    <string name="btn_elimar_articulos">Retirer des articles</string>
+    <string name="btn_mas_bolsas">Ajouter des sacs</string>
+    <string name="btn_ingresar">Entrer</string>
+    <string name="ejm_id">Ex. : 1234566778</string>
+    <string name="tv_total_pagar">TOTAL À PAYER</string>
+    <string name="btn_pagar">Payer</string>
+    <string name="btn_pagar_precio">Payer %1$s</string>
+    <string name="btn_cambiarmp">Changer le mode de paiement</string>
+    <string name="btn_reiniciar">Lire une autre pièce d\'identité</string>
+    <string name="texto_medio_de_pago_seleccionado">Moyen de paiement</string>
+    <string name="btn_volver_a_empezar">Recommencer</string>
+    <string name="title_volver_a_empezar">Redémarrer la lecture</string>
+    <string name="texto_volver_a_empezar">Êtes-vous sûr de vouloir recommencer la lecture des articles ?</string>
+    <string name="progress_consultando_producto">Consultation du produit en cours…</string>
+    <string name="progress_consultando_productos">Consultation des produits en cours…</string>
+    <string name="error_producto_no_encontrado">Produit non trouvé</string>
+    <string name="confirme_lectura_eanes">Confirmez la lecture de %1$s</string>
+    <string name="incentivo">Incitatif</string>
+    <string name="btn_salir_confi">Quitter la configuration</string>
+    <string name="editar_texto_fragment">Modifier %1$s</string>
+    <string name="problemas_lector">Le lecteur ne fonctionne pas correctement, contactez l\'administrateur du magasin.</string>
+    <string name="producto_precio_cero">Un produit avec un prix de 0 a été trouvé. Veuillez le retirer du tiroir et en informer un caissier. Produit : %1$s</string>
+    <string name="productos_precio_cero">Des produits avec un prix de 0 ont été trouvés. Veuillez les retirer du tiroir et en informer un caissier. Produits : %1$s</string>
+
+    <!-- TODO: VistaMediosPago-->
+    <string name="pagar_bancolombia_qr">QR Bancolombia</string>
+    <string name="pagar_tarjeta">Carte</string>
+    <string name="tv_titulo_seleccione">Sélectionnez le moyen de paiement :</string>
+    <string name="btn_atras_medio_pago">Retour</string>
+    <string name="btn_regresar">Retour</string>
+    <string name="pago_no_encontrado_qr_bancolombia_idioma">Le paiement n\'a pas été trouvé.</string>
+    <string name="total_a_pagar">TOTAL À PAYER :</string>
+    <string name="cantidad_articulos_mp">Nombre d\'articles :</string>
+    <string name="error_cupo_empleado">Impossible de finaliser l\'achat, votre quota employé est de %1$s… le quota a été dépassé de %2$s, si vous souhaitez continuer l\'achat, sélectionnez un autre moyen de paiement.</string>
+    <string name="progress_procesando_compra">Traitement de l\'achat en cours…</string>
+    <string name="progress_procesando_compra_exitosa">Paiement réussi, finalisation de l\'achat…</string>
+    <string name="progress_procesando_compra_datafono">Génération de la requête pour le terminal de paiement…</string>
+    <string name="tv_nombre_producto_texto">SAC EN PLASTIQUE GALAXY</string>
+    <string name="tv_valor_final_texto">Valeur finale :</string>
+    <string name="tv_cantidad_texto">3</string>
+    <string name="tv_Precio_texto">60 €</string>
+    <string name="tv_Dcto_texto">0 €</string>
+    <string name="tv_valor_pagar_texto">180 €</string>
+    <string name="codigo_ya_redimido_idioma">Le code de vérification a déjà été utilisé</string>
+    <string name="codigo_ya_expiro_idioma">Le code de vérification a expiré</string>
+    <string name="codigo_no_existe_idioma">Le code de vérification n\'existe pas</string>
+    <string name="introduce_codigo_verificacion">Entrez le code de vérification</string>
+    <string name="codigo_verificacion_incorrecto">Le code saisi est incorrect</string>
+
+    <!-- TODO: VistaFragmentFooter-->
+    <string name="texto_desarrollado_por">Développé par Crystal S.A.S</string>
+    <string name="titulo_terminos_condiciones">Termes et conditions</string>
+    <string name="texto_terminos_condiciones">Disponible uniquement pour les paiements électroniques en ligne. Ne s\'applique pas aux remises nécessitant l\'intervention de l\'administrateur du magasin telles que les Forces Armées, Bancolombia, entre autres. Pour ce type d\'achat ou en cas de retour de produit, veuillez vous rendre aux postes de paiement tenus par le personnel du magasin.</string>
+
+    <!-- TODO: VistaConfiguracion-->
+    <string name="guardado_exitoso_xml">La configuration du périphérique a été enregistrée avec succès.</string>
+    <string name="mensaje_guardar_xml">Impossible d\'enregistrer le fichier XML car le répertoire n\'a pas été correctement créé, veuillez contacter l\'administrateur.</string>
+    <string name="epson">Epson</string>
+    <string name="bixolon">Bixolon</string>
+
+    <!-- TODO: VistaImprimirTirilla-->
+    <string name="tx_texto_impresion_gracias">MERCI POUR VOTRE ACHAT !</string>
+    <string name="tx_texto_impresion_espera">À bientôt</string>
+    <string name="tx_texto_bixolon_config">Seleccione el dispositivo BIXOLON para imprimir</string>
+    <string name="tx_texto_impresion_califica">Évaluez votre expérience</string>
+    <string name="tx_texto_impresion_gracias_califica">Merci pour votre évaluation</string>
+    <string name="impresora_configuracion">Configurer l\'imprimante</string>
+    <string name="tef_configuracion">Configurer le terminal de paiement</string>
+    <string name="perifericos_configuracion">Configurar Perifericos</string>
+    <string name="log_configuracion">Configurar Log</string>
+    <string name="direccion_ip">Adresse IP</string>
+    <string name="puerto">Port</string>
+    <string name="mac">Adresse MAC</string>
+    <string name="codigo_respuesta">Code réponse</string>
+    <string name="codigo_datafono">Code terminal de paiement</string>
+    <string name="codigo_unico_datafono">Code unique du commerce</string>
+    <string name="et_usuario_datafono">Utilisateur du terminal de paiement</string>
+    <string name="et_pass_datafono">Mot de passe du terminal de paiement</string>
+    <string name="et_pass_supervisor" translatable="false">Mot de passe du superviseur (Annulation)</string>
+    <string name="et_time_datafono">TimeOut du terminal de paiement (Supérieur ou égal à 3s)</string>
+    <string name="texto_mayor_o_igual_a">Entrez un temps supérieur ou égal à 3 secondes.</string>
+    <string name="et_time_datafono_espera" translatable="false">Délai d\'attente du terminal de paiement (Supérieur ou égal à 3m)</string>
+    <string name="texto_mayor_o_igual_a_espera" translatable="false">Entrez un temps supérieur ou égal à 3 minutes.</string>
+    <string name="config_impresora">Configurer l\'imprimante</string>
+    <string name="desconectando">Déconnexion en cours</string>
+    <string name="no_conectado">Non connecté</string>
+    <string name="error_desconectada">Erreur! Déconnectée</string>
+    <string name="bluetooth_error_adapter">Erreur lors de la lecture de l\'adaptateur bluetooth</string>
+    <string name="bluetooth_apagado">Bluetooth désactivé</string>
+    <string name="pulse_impresion">Appuyez sur le bouton d\'impression</string>
+    <string name="activat_bluetooth_impr">Vous devez activer le bluetooth pour pouvoir imprimer.</string>
+    <string name="conectado___">Connexion en cours…</string>
+    <string name="imprimiendo___">Impression en cours…</string>
+    <string name="impresion_realizada">Impression terminée</string>
+    <string name="rivise_dispositivo_bluetooth">Vérifiez la connexion au périphérique ainsi que si le bluetooth est activé.</string>
+    <string name="revise_ip_puerto">Vérifiez l\'adresse IP et le port saisis, ainsi que votre connexion Internet.</string>
+    <string name="btn_salir_impresion">Fermer</string>
+    <string name="btn_salir_datafono">Fermer et enregistrer</string>
+    <string name="btn_imprimir">Imprimer</string>
+    <string name="re_imprimir">Réimprimer</string>
+    <string name="proceso_curso">Veuillez patienter, une opération est en cours</string>
+    <string name="selec_impresora">Vous devez sélectionner une imprimante</string>
+    <string name="introducir_puerto_ip">Vous devez saisir l\'adresse IP et le port</string>
+    <string name="error_impresion_intentar">Erreur d\'impression, veuillez réessayer</string>
+    <string name="texto_pruebas">*Test effectué avec succès*</string>
+    <string name="texto_pruebasCodigoBarras">TEST-RÉUSSI</string>
+    <string name="texto_numeroCaja">Caisse No:</string>
+    <string name="texto_fecha">Date:</string>
+    <string name="texto_numeroDeIdentificacion">N° d\'identification:</string>
+    <string name="texto_numeroTransacionSencillo">Numéro:</string>
+    <string name="texto_nombreTienda">MAGASIN</string>
+    <string name="compra_selfcheckout">Achat effectué en libre-service</string>
+    <string name="btn_prueba_datafono">Test de communication</string>
+    <string name="progress_seguir_pasos_datafono">Appuyez sur le bouton vert du terminal de paiement et suivez les instructions (%1$s)…</string>
+    <string name="progress_seguir_pasos_datafono_cliente">Appuyez sur le bouton vert du terminal de paiement et suivez les instructions…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_redeban" translatable="false">Sur le terminal de paiement, accédez à l\'option 2, recherchez ANNULATION et suivez les instructions…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_anulacion">Appuyez sur le bouton 6 sur le terminal, sélectionnez l\'option d\'annulation et suivez les instructions…</string>
+    <string name="texto_tituloCertificadoRegalo" translatable="false">BON CADEAU</string>
+
+    <!-- TODO: VistaDeviceBluetoothSelectDialogFragment-->
+    <string name="select_impresora_blue">Sélectionnez l\'imprimante Bluetooth à utiliser</string>
+    <string name="dispositivo_bluetooth">Appareils Bluetooth</string>
+    <string name="mostrar_todos">Afficher tous</string>
+
+    <!-- TODO: Lottie-->
+    <string name="animacion_escanear_cedula">license_scanning.json</string>
+    <string name="animacion_splash_inicio">splash_inicio.lottie</string>
+    <string name="animacion_splash_inicio2">splash_inicio2.lottie</string>
+    <string name="animacion_inicio_sesion">inicio_session.json</string>
+    <string name="animacion_compra_realizada">animation_compra1.json</string>
+    <string name="animacion_here">animation_here.json</string>
+    <string name="animacion_buscar">animation_buscar.json</string>
+    <string name="animacion_datafono">datafono_animacion.json</string>
+    <string name="animacion_info">animation_information.lottie</string>
+    <string name="animacion_flecha_derecha_azul">animation_flecha_derecha_azul.json</string>
+    <string name="animacion_cara_enojada">animation_cara_enojada.json</string>
+    <string name="animacion_cara_neutral">animation_cara_neutral.json</string>
+    <string name="animacion_cara_feliz">animation_cara_feliz.json</string>
+
+    <!-- TODO: CantidadBolsasDialogFragment -->
+    <string name="et_hint_cantidad_bolsas">Nombre de sacs</string>
+    <string name="cantidad_de_bolsas">Quantité de sacs</string>
+    <string name="texto_cantidad_bolsas">Entrez la quantité de sacs que vous souhaitez emporter pour cet achat</string>
+    <string name="texto_info_bolsas_agregadas">%1$s sacs ajoutés</string>
+    <string name="texto_info_bolsas_agregada">Sac ajouté</string>
+    <string name="progress_consultando_bolsa">Ajout de %1$s sac en cours…</string>
+    <string name="progress_consultando_bolsas">Ajout de %1$s sacs en cours…</string>
+    <string name="resumen_compra">Résumé de l\'achat</string>
+    <string name="btn_atras_bolsas">Retour</string>
+    <string name="btn_continuar_bolsas">Continuer sans sac</string>
+    <string name="limite_bolsas">Vous ne pouvez pas emporter plus de (%1$s) sacs</string>
+    <string name="btn_continuar_bolsas_cantidad">Continuer avec (1) sac</string>
+    <string name="btn_continuar_bolsas_cantidad_mas">Continuer avec (%1$s) sacs</string>
+
+    <!-- TODO: QrBancolombiaDialogFragment -->
+    <string name="btn_finalizar">Finaliser l\'achat</string>
+    <string name="texto_finalizar_qr_bancolombia">Une fois le code QR scanné, finalisez l\'achat</string>
+    <string name="progress_generando_qr">Génération du code QR…</string>
+    <string name="progress_tarjeta">Suivez les étapes du terminal de paiement…</string>
+    <string name="error_crear_qr">Une erreur est survenue avec le code QR SVG, veuillez contacter l\'administrateur.</string>
+    <string name="title_qr_dialogfragment">Payez depuis votre téléphone</string>
+    <string name="message_qr_dialogfragment">Scannez depuis l\'application Bancolombia ou Nequi</string>
+
+    <!-- TODO: CambiarUrlDialogFragment -->
+    <string name="titleUrlDialogFragment">Changer les URLs de base</string>
+    <string name="msjUrlDialogFragment">Entrez les URLs des services</string>
+    <string name="msjUrlDialogFragment_in">URL intermédiaire (QR, RFID)</string>
+    <string name="msjUrlDialogFragment_nn">URL non native (Reste des services)</string>
+    <string name="url_invalida">URL intermédiaire non valide</string>
+    <string name="url_invalida_nn">URL non native non valide</string>
+
+    <!-- TODO: DepatamentosDialogFrangment -->
+    <string name="select_departamento">Sélectionnez un département</string>
+    <string name="departamentos">Départements</string>
+
+    <!-- TODO: CiudadesDialogFragment -->
+    <string name="select_cuidad">Sélectionnez une ville</string>
+    <string name="cuidades">Villes</string>
+
+    <!-- TODO: DescuentosClienteDialogFragment -->
+    <string name="select_descuento_compra">Sélectionnez une remise pour votre achat :</string>
+    <string name="select_descuento_medio_de_pago_compra">Sélectionnez une remise/moyen de paiement pour votre achat</string>
+    <string name="medio_de_pago">Moyen de paiement</string>
+    <string name="select_medio_de_pago_compra">Sélectionnez un moyen de paiement pour votre achat</string>
+    <string name="medio_de_pago_referido">Remise/Moyen de paiement Référé</string>
+    <string name="select_medio_de_pago_compra_referido">Sélectionnez une remise/moyen de paiement référé pour votre achat</string>
+    <string name="cupon_referido">Code coupon (employé référé)</string>
+    <string name="btn_validar_cupon">Valider le coupon</string>
+    <string name="inserte_codigo_cupon">Entrez le code du coupon</string>
+    <string name="dialog_progress_validar_cupon">Validation du code…</string>
+    <string name="title_quitar_del_carrito">Retirer le produit</string>
+    <string name="texto_quitar_del_carrito">RETIREZ L\'ARTICLE OU LES ARTICLES QUE VOUS NE SOUHAITEZ PAS EMPORTER DE LA CAISSE</string>
+    <string name="texto_quitar_del_carrito_comprobar">Vous n\'avez pas retiré le produit (%1$s) de la caisse, veuillez retirer le produit.</string>
+    <string name="helper_tv_referido">Si vous avez un code référent, saisissez-le ici</string>
+    <string name="serial_seriales_registrados">Aucun produit nouveau trouvé.</string>
+
+    <!-- TODO: VerificarCodigoDialogFragment -->
+    <string name="tv_texto_codigo">Code</string>
+    <string name="btn_verificar_codigo">Vérifier le code</string>
+    <string name="tv_texto_helper_codigo">Entrez le code ici, puis appuyez sur le bouton (Vérifier le code)</string>
+    <string name="btn_reenviar_codigo">Renvoyer le code</string>
+    <string name="btn_atras_verificacion">Retour</string>
+    <string name="title_dialog_verificacion">Vérification</string>
+    <string name="texto_dialog_verificacion">Veuillez entrer le code de vérification envoyé à (%1$s)
+    ou à l\'e-mail (%2$s).</string>
+    <string name="ups_algo_mal">Oups ! Quelque chose s\'est mal passé</string>
+    <string name="ups_algo_mal_msj">Malheureusement, nous avons rencontré un problème lors du traitement de votre demande. Veuillez réessayer ou vous rendre à une caisse pour plus d\'informations. Cod (%1$s)</string>
+    <string name="ups_algo_mal_msj_tef">Malheureusement, nous avons rencontré un problème lors du traitement de votre demande au terminal de paiement. Veuillez contacter un conseiller en magasin. Code (%1$s)</string>
+    <string name="ups_algo_mal_msj_actualizar">Malheureusement, nous avons rencontré un problème lors de la mise à jour de la transaction. Cod (%1$s)</string>
+
+    <!-- TODO: Generales -->
+    <string name="ok">OK</string>
+    <string name="generico">Continuer, client générique</string>
+    <string name="entiendo">Je comprends</string>
+    <string name="cambiar_idioma_titulo" translatable="false">Changer de langue</string>
+    <string name="flecha_salir">Sortie</string>
+    <string name="flecha_continuar">Continuer</string>
+    <string name="si">Oui</string>
+    <string name="si_continuar">Oui, continuer</string>
+    <string name="no">Non</string>
+    <string name="anular">Annuler</string>
+    <string name="no_incorrectos">Saisir une autre pièce d\'identité</string>
+    <string name="retirado">Retiré</string>
+    <string name="retirar_cajon">Prêt, articles retirés</string>
+    <string name="atras">Retour</string>
+    <string name="soy_yo">Oui, c\'est moi</string>
+    <string name="continuar">Continuer</string>
+    <string name="volver_inicio">Retour au début</string>
+    <string name="certicado_regalo" translatable="false">Chèque-cadeau</string>
+    <string name="ir_a_pagar">Aller payer</string>
+    <string name="ir_medio_pago">Aller aux modes de paiement</string>
+    <string name="agregar">Ajouter</string>
+    <string name="error">Erreur</string>
+    <string name="confirmar">Confirmer</string>
+    <string name="atencion">Attention</string>
+    <string name="cancelar">Annuler</string>
+    <string name="error_conexion_sb">Erreur de connexion au service web de base.</string>
+    <string name="error_conexion">Erreur de connexion : </string>
+    <string name="informacion">Information</string>
+    <string name="pago_exitososo">Paiement réussi</string>
+    <string name="descuentos">Remise %1$s</string>
+    <string name="salir">Sortie</string>
+    <string name="descuentos_medio_de_pago">Remises/Modes de paiement</string>
+    <string name="aceptar">Accepter</string>
+    <string name="buscar">Chercher</string>
+    <string name="entendido">Compris</string>
+    <string name="reintentar">Réessayer</string>
+    <string name="positivo_anulacion">Annuler</string>
+    <string name="negativo_anulacion">Plus d\'informations</string>
+    <string name="_ir">Aller</string>
+    <string name="cerrar">Fermer</string>
+    <string name="volver">Retour</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="credibanco">CrediBanco</string>
+    <string name="Redeban">Redeban</string>
+    <string name="ip_dns">IP/DNS</string>
+    <string name="cerrar_sesion">Fermer la session</string>
+    <string name="impresora_epson">Epson (Bluetooth/IP)</string>
+    <string name="log_activar">Activar Log</string>
+    <string name="log_desactivar">Desactivar Log</string>
+    <string name="impresora_bixolon">Bixolon (USB)</string>
+    <string name="puerto_invalido">Port invalide</string>
+    <string name="autorizar">Autoriser</string>
+    <string name="imprimir_info">Imprimer</string>
+    <string name="info_cajon" translatable="false">RETIREZ LES CROCHETS ET PLACEZ TOUS LES ARTICLES DANS LE TIROIR</string>
+    <string name="info_cajon_nuevos" translatable="false">RETIREZ LES CROCHETS ET PLACEZ TOUS LES NOUVEAUX ARTICLES DANS LE TIROIR</string>
+    <string name="info_cajon_ganchos" translatable="false">TIROIR DE CROCHETS</string>
+    <string name="info_cajon_ropa" translatable="false">TIROIR VÊTEMENTS</string>
+
+    <!-- TODO: Mensajes de voz del dispositivo -->
+    <string name="bienvenido_al_autopago">Bienvenue à l\'auto-paiement</string>
+    <string name="voz_seleccione_caja">Sélectionnez la caisse pour le magasin, %1$s.</string>
+    <string name="ingrese_su_numero_cedula">Saisissez votre numéro de pièce d\'identité</string>
+    <string name="voz_registro">Souhaitez-vous vous inscrire ?</string>
+    <string name="voz_cliente_generico">Souhaitez-vous continuer sans données ?</string>
+    <string name="voz_confirmacion_de_datos_cliente">Confirmez les données que vous voyez à l\'écran.</string>
+    <string name="voz_eliminar_productos_canasta">Retirez tous les articles que vous ne souhaitez pas emporter du tiroir.</string>
+    <string name="voz_inserte_productos_canasta" translatable="false">Retirez les crochets et placez tous les articles dans le tiroir.</string>
+    <string name="voz_inserte_productos_canasta_nuevos" translatable="false">Retirez les crochets et placez tous les nouveaux articles dans le tiroir.</string>
+    <string name="voz_medio_de_pago">Sélectionnez le moyen de paiement.</string>
+    <string name="voz_medio_de_pago_otro">Sélectionnez un autre moyen de paiement.</string>
+    <string name="voz_cantidad_articulos">%1$s articles ajoutés</string>
+    <string name="voz_cantidad_articulo">Article ajouté</string>
+    <string name="voz_pago_tef">Appuyez sur le bouton vert du terminal de paiement et suivez les instructions</string>
+    <string name="voz_anulacion_tef">Appuyez sur le bouton 2 du terminal de paiement et suivez les instructions</string>
+    <string name="voz_agradecimiento_compra">Merci pour votre achat. N\'oubliez pas de récupérer tous les articles et le reçu. Vous pouvez également évaluer votre expérience avec le système de paiement automatique.</string>
+    <string name="voz_califica_autopago">Évaluez notre système de paiement automatique.</string>
+    <string name="voz_codigo_verificacion">Veuillez saisir le code de vérification envoyé par SMS ou par e-mail.</string>
+    <string name="voz_bolsas">Saisissez le nombre de sacs que vous souhaitez pour cet achat.</string>
+    <string name="voz_qr_bancolombia">Payez depuis votre téléphone portable, scannez avec l\'application Bancolombia ou Nequi. Une fois le code QR scanné, finalisez l\'achat.</string>
+    <string name="btn_sin_datos" translatable="false">Continuer sans données</string>
+    <string name="texto_sin_datos" translatable="false">Voulez-vous continuer sans saisir le numéro d\'identification ?</string>
+
+    <!-- TODO: politicasGEF -->
+    <string-array name="titulos_politicas_gef">
+        <item>MONSIEUR LE CLIENT</item>
+        <item>POILITIQUE D\'ÉCHANGE</item>
+        <item>AVIS DE CONFIDENTIALITÉ</item>
+        <item>POILITIQUE DE GARANTIE</item>
+    </string-array>
+    <string-array name="texto_politicas_gef">
+        <item>En cas de divergence entre votre facture ou votre achat, vous disposez d\'un maximum de 7
+            jours calendaires pour déposer votre réclamation en utilisant notre formulaire PQRS.
+            Cet établissement met à disposition des formulaires de pétition, de plainte, de réclamation
+            et de suggestion (PQRS). Si vous devez déposer un PQRS, demandez le formulaire au
+            responsable du magasin, à l\'assistant ou au caissier; fournissez les faits ou les raisons
+            de votre insatisfaction, en précisant clairement la date et l\'heure de l\'incident, et,
+            si possible, les personnes directement impliquées dans votre réclamation. Demandez une copie
+            signée par la personne responsable du magasin pour la réception du PQRS. S\'il n\'y a pas
+            de formulaires disponibles ou de personne responsable de la réception du PQRS, contactez la
+            ligne d\'assistance nationale gratuite de l\'entreprise au 01 8000 517 536 ou (604) 540 73 38,
+            ou par e-mail à servicioalcliente@crystal.com.co, et signalez l\'incident à la Superintendance
+            de l\'industrie et du commerce aux numéros suivants: ligne nationale gratuite 01 8000 910 165,
+            et à Bogotá 651 2140, e-mail: info@sic.gov.co ou visitez le site Web www.sic.gov.co.
+            Coordonnées de contact : Adresse : Carrera 48 nro 52 sur 81, Sabaneta, Antioquia. Email :
+            proteccionbasedatos@crystal.com.co - Téléphone : (604) 6048294</item>
+        <item>Délai d\'échange : 30 jours calendaires après l\'achat (date de la facture). Pour effectuer
+            des échanges, les produits doivent être en parfait état, propres, non utilisés, avec étiquettes
+            et étiquettes. Le produit ne doit pas être modifié ou altéré de son emballage d\'origine.
+            Les produits à usage personnel (culottes, strings, boxers, slips, masseurs, thermos, chaussettes,
+            masques faciaux, cols, manches, casquettes, ou autres produits de protection et de soin personnel),
+            bijoux, bijoux fantaisie, produits de soins personnels et cosmétiques ne peuvent pas être échangés.
+            Les chaussettes, les hauts, les soutiens-gorge et les maillots de bain peuvent être échangés s\'ils
+            conservent leurs étiquettes, étiquettes et protecteurs. Les vêtements Runproof, Furor et Intertex
+            ne sont ni échangeables ni garantis.</item>
+        <item>La société CRYSTAL S.A.S identifiée par le numéro de TVA 890.901.672–5, vous informe par le
+            biais de cet avis de confidentialité, en conformité avec les dispositions des articles 9
+            et 12 de la loi 1581 de 2012, et d\'autres articles et réglementations pertinentes, qu\'elle
+            sera responsable de la collecte et du traitement des données personnelles que vous fournissez
+            dans le but de développer des activités liées aux objectifs sociaux de l\'entreprise et au
+            développement administratif de celle-ci, notamment à des fins de facturation, pour se conformer
+            aux obligations fiscales, pour réaliser des analyses du comportement des clients afin de définir
+            les habitudes de consommation dans le but d\'améliorer l\'expérience des clients avec les
+            marques de Crystal S.A.S ; tenir un registre des clients actifs et inactifs ; contacter les
+            clients ou les clients potentiels via différents canaux (e-mail, courrier physique, via centre d\'appels, etc.)
+            à des fins commerciales, de recouvrement ou juridiques si nécessaire ; recevoir, traiter et
+            résoudre les demandes, plaintes, réclamations et/ou suggestions soumises par les clients ou les
+            clients potentiels; mener des activités académiques en collaboration avec des entités publiques
+            ou privées dans le domaine du marketing. Les données stockées ne sont traitées que pour les
+            finalités susmentionnées. De plus, en tant que propriétaire des données personnelles traitées
+            par notre entreprise, vous bénéficiez de tous les droits et garanties établis par la loi et la
+            constitution, en particulier le droit d\'accéder aux données personnelles stockées par cette entreprise,
+            de mettre à jour ces données, de demander la correction ou la suppression des données, ainsi
+            que de révoquer l\'autorisation fournie pour leur traitement. En outre, la société CRYSTAL S.A.S
+            vous informe que vous pouvez accéder à la politique complète de traitement des données personnelles
+            applicable à la base de données où sont stockées vos informations sur le site Web www.crystal.com.co.
+            Coordonnées de contact : Adresse : Carrera 48 nro 52 sur 81, Sabaneta, Antioquia. Email :
+            proteccionbasedatos@crystal.com.co - Téléphone : (604) 6048294</item>
+        <item>Durée de garantie pour la qualité : 3 mois après l\'achat (date de la facture). Pour traiter
+            votre réclamation, le produit ne doit pas être modifié ou altéré par l\'acheteur de son état d\'origine,
+            et il doit être en bon état et propre. Pour les références telles que les crèmes, les exfoliants,
+            les huiles, les eaux de rose, les bougies et les désodorisants, les garanties s\'appliqueront s\'ils
+            causent des problèmes de santé à l\'utilisateur. Si le défaut ne répond pas aux conditions
+            de retour en garantie. Nos produits, sauf indication contraire expresse sur leurs étiquettes,
+            ne sont pas adaptés à une utilisation en tant qu\'uniformes et/ou vêtements d\'entreprise ou similaires.</item>
+    </string-array>
+
+    <!-- TODO: NoCambiarIdioma -->
+    <string name="codigo_ya_redimido">El código de verificación ya fue redimido</string>
+    <string name="codigo_ya_expiro">El código de verificación ya expiró</string>
+    <string name="codigo_no_existe">El código de verificación no existe</string>
+    <string name="pago_no_encontrado_qr_bancolombia">No se ha encontrado el pago.</string>
+    <string name="texto_no_encuentra_pago_tef">No se encuentra el pago</string>
+    <string name="btn_cambiar_idioma" translatable="false">Cambiar idioma / Change language</string>
+    <string name="texto_cambiar_idioma" translatable="false">¿Quieres cambiar el idioma? / Do you want to change the language?</string>
+    <string name="seleccion_lenguaje" translatable="false">Seleccione el lenguaje de su preferencia / Select the language of your preference</string>
+    <string-array name="language_options">
+        <item>Español / Spanish - Colombia</item>
+        <item>Inglés / English - Estados Unidos / United States</item>
+        <item>Francés / French - Francia / France</item>
+        <item>Ruso / Russian - Rusia / Russia</item>
+        <item>Mandarín - China</item>
+    </string-array>
+</resources>

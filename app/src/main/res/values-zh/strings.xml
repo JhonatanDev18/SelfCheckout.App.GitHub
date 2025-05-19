@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_apk">V.4.3.4.0</string>
+    <string name="app_name">Self Checkout</string>
+    <string name="app_name_splash">Self Checkout…</string>
+    <string name="titulo_config">配置</string>
+
+    <!-- TODO: VistaLogin -->
+    <string name="usuario">用户</string>
+    <string name="contrasena">密码</string>
+    <string name="iniciar_sesion">登录</string>
+    <string name="usuario_requerido">需要用户名</string>
+    <string name="contrasena_requerido">需要密码</string>
+    <string name="progress_iniciando_sesion">登录中…</string>
+    <string name="alertaPermisosMemoriaInterna">为了 自助付款 应用程序的良好运行，您必须授予权限</string>
+    <string name="progress_cargando">载入中…</string>
+    <string name="progress_escaneando">扫描中…</string>
+    <string name="progress_anulando">取消中…</string>
+    <string name="la_transaccion_ya_anulada">此交易已被取消。</string>
+    <string name="progress_retiro">检查中…</string>
+    <string name="progress_leyendo">载入中…</string>
+    <string name="opcion_deshabilitada">选项被禁用。</string>
+    <string name="progress_consultando_cupo_empleado">查询员工配额中…</string>
+    <string name="progress_reenviando">重新发送代码…</string>
+    <string name="sin_cajas_disponible">%1$s 店铺没有可用的收银机。</string>
+    <string name="caja_cerrada">%1$s 收银机已关闭</string>
+    <string name="buscar_caja">搜索收银机</string>
+    <string name="buscar_ciudad">搜索城市</string>
+    <string name="buscar_departamento">搜索部门</string>
+    <string name="cajas">%1$s 店铺的收银机</string>
+    <string name="titulo_recomendacion_carga">信息</string>
+    <string name="selecciona_n_dispositivo">为此设备选择收银机</string>
+    <string name="parametros_no_encontrados">找不到参数</string>
+    <string name="mensaje_recomendacion_carga">正在加载打印和 TEF 支付参数，自助付款 将关闭以完成此配置加载。</string>
+    <string name="error_crear_directorio">创建用于保存 XML 配置的目录时出现问题，请与管理员联系。</string>
+    <string name="error_lectura_parametros">读取以下参数时出现错误：%1$s 请立即联系管理员。</string>
+    <string name="msj_alerta_apertura">%1$s 收银机的开放日期与系统日期 %3$s 不符</string>
+
+    <!-- TODO: VistaConsultaCliente -->
+    <string name="texto_consulta_cliente_titulo">请输入您的身份证号码</string>
+    <string name="texto_consulta_cliente">输入您的身份证号码，然后点击“输入”按钮</string>
+    <string name="et_cedula" translatable="false">身份证号码</string>
+    <string name="tv_titulo_instrucciones">步骤</string>
+    <string name="tv_instruccio_1">1. 输入您的身份证号码。</string>
+    <string name="tv_instruccio_2">2. 把您想要带走的所有物品放在抽屉里。</string>
+    <string name="tv_instruccio_3">3. 选择您首选的支付方式，完成。</string>
+    <string name="btn_cliente_generico">如果您不想使用您的文件，请单击此处</string>
+    <string name="btn_consultar_cliente">输入</string>
+    <string name="tv_titulo_bienvenido">欢迎！</string>
+    <string name="texto_cerrar_sesion">您确定要注销吗？</string>
+    <string name="progress_consultando_cedula">查询身份证…</string>
+    <string name="progress_consultando_ultima_tef">查询中…</string>
+    <string name="confirmacion_de_datos">数据确认</string>
+    <string name="texto_confirmacion_de_datos">请确认屏幕上显示的数据是否正确。您是这个人吗？备注：如果不正确，请去收银台更新您的数据。</string>
+    <string name="tv_cedula_cliente">身份证号码</string>
+    <string name="tv_nombre_cliente">姓名</string>
+    <string name="tv_celular_cliente">手机号码</string>
+    <string name="tv_correo_cliente">电子邮件</string>
+    <string name="error_cliente_no_existe">错误，未找到此客户在 CEGID 中。</string>
+    <string name="_cliente">CONSUMIDOR</string>
+    <string name="_generico">FINAL</string>
+    <string name="ninguno">无</string>
+    <string name="cedula_ciudadania_letra">CC</string>
+    <string name="key_intent_cliente">客户</string>
+    <string name="key_intent_productos">产品</string>
+    <string name="key_intent_descuentos">折扣</string>
+    <string name="key_intent_factura">账单</string>
+    <string name="key_intent_ultima_tef">最后一次 TEF</string>
+    <string name="key_intent_reconeccion">重新连接</string>
+    <string name="key_intent_cliente_nuevo">新客户</string>
+    <string name="crear_cliente">注册</string>
+    <string name="sin_registro">无记录</string>
+    <string name="crear_cliente_confirmar">确认身份证是：</string>
+    <string name="continuar_cliente_generico">您的身份证未注册，您要继续使用无数据吗？注意：如果您要注册数据，请前往收银台。</string>
+    <string name="info_usar_app">要使用自助结账系统，您必须继续使用无数据或者必须注册，如果您需要更多信息，请前往收银台。</string>
+    <string name="identificacion_invalida">身份证号码无效</string>
+    <string name="tab_consultaCliente">查询</string>
+    <string name="tab_compraCliente">扫描</string>
+    <string name="tab_medioPago">支付方式</string>
+    <string name="tab_tirilla">完成</string>
+    <string name="configuraciones">设置</string>
+    <string name="selecciona_configuracion">请选择以下设置之一</string>
+    <string name="aprobacion">批准：</string>
+    <string name="seleccione_opcion_tef">TEF 交易（%1$s）</string>
+    <string name="texto_seleccione_opcion_tef">您想要取消 TEF 交易还是查看更多信息？</string>
+    <string name="texto_no_hay_ultimo_pago_tef" translatable="false">没有最后记录的支付。</string>
+    <string name="error_caracter_especial_nombre">您的个人信息存在问题，请前往收银台更正您的信息。</string>
+
+    <!-- TODO: AnularTefDialogFragment -->
+    <string name="titulo_anulacion">取消</string>
+    <string name="texto_anulacion">请选择要取消的TEF交易。</string>
+    <string name="hint_recibo">收据号码。</string>
+    <string name="btn_anular">取消</string>
+    <string name="et_invalido">请输入收据号码。</string>
+
+    <!-- TODO: AutorizacionSimpleDialogFragment -->
+    <string name="auto_cerrar_sesion">管理员必须授权关闭SelfCheckout。</string>
+    <string name="auto_configurar">管理员必须授权配置SelfCheckout。</string>
+    <string name="autorizacion">授权</string>
+    <string name="usurio_requerido">需要用户</string>
+    <string name="pass_requerido">需要密码</string>
+    <string name="error_autorizacion_">授权错误：</string>
+    <string name="consultando_autorizacion">授权中…</string>
+    <string name="tipo_usuario_invalido">用户和密码错误。</string>
+    <string name="escaneo_cancelado">扫描已取消</string>
+
+    <!-- TODO: Lector de codigo de barras-->
+    <string name="linterna_encendida">打开闪光灯</string>
+    <string name="linterna_apagada">关闭闪光灯</string>
+    <string name="msj_scan_barcode">将条形码放入取景器的矩形框内进行扫描。</string>
+
+    <!-- TODO: VistaClienteDetalle-->
+    <string name="actualizar_cliente">更新个人信息</string>
+    <string name="autopago_tiendas">自助购物店</string>
+    <string name="cliente_nuevo">注册</string>
+    <string name="btn_continuar">继续</string>
+    <string name="btn_encerder_rfid">完成，物品在抽屉里</string>
+    <string name="et_cedula_detalle">身份证号码</string>
+    <string name="btn_generar_qr">生成Bancolombia二维码</string>
+    <string name="et_nombre_detalle">名字</string>
+    <string name="et_apellido_detalle">姓氏</string>
+    <string name="et_fecha_nacimiento_detalle">出生日期</string>
+    <string name="et_correo_detalle">电子邮件</string>
+    <string name="et_celular_detalle">手机号码</string>
+    <string name="et_direccion_detalle">居住地址</string>
+    <string name="et_departamento_detalle">省份</string>
+    <string name="texto_tipo_documento">证件类型</string>
+    <string name="et_ciudad_detalle">城市</string>
+    <string name="rb_genero_masculino">男性</string>
+    <string name="rb_genero_femenino">女性</string>
+    <string name="tv_seleccione_departamento">请选择省份</string>
+    <string name="tv_seleccione_ciudad">请选择城市</string>
+    <string name="tv_titulo_genero">性别</string>
+    <string name="tv_titulo_fecha_nacimiento">出生日期</string>
+    <string name="texto_sin_autorizacion">您必须授权使用和处理数据以继续</string>
+    <string name="autorizacion_datos_personales">我授权Crystal S.A.S使用和处理我的个人数据</string>
+    <string name="seleccione_tipo_documento">请选择证件类型</string>
+    <string name="registro_nombre_requerido">请输入您的名字</string>
+    <string name="registro_apellido_requerido">请输入您的姓氏</string>
+    <string name="registro_fecha_nacimiento_requerido">请输入您的出生日期</string>
+    <string name="registro_fecha_nacimiento_requerido_valida">请输入有效的出生日期</string>
+    <string name="registro_fecha_nacimiento_requerido_valido">您必须年满15岁</string>
+    <string name="registro_correo_y_celular_requerido">请输入您的电子邮件或手机号码</string>
+    <string name="registro_correo_requerido_valido">请输入有效的电子邮件</string>
+    <string name="registro_celular_requerido">请输入您的手机号码</string>
+    <string name="registro_celular_requerido_valido">请输入有效的手机号码</string>
+    <string name="registro_direccion_requerido">请输入您的居住地址</string>
+    <string name="registro_genero_requerido">请输入您的性别</string>
+    <string name="registro_departamento_requerido">请输入居住省份</string>
+    <string name="registro_ciudad_requerido">请输入居住城市</string>
+    <string name="departamento_requerido">请先选择省份</string>
+    <string name="progress_registrando_cliente">保存信息中…</string>
+    <string-array name="documentos_identidad">
+        <item>身份证</item>
+        <item>NIT</item>
+        <item>护照</item>
+        <item>哥斯达黎加身份证</item>
+        <item>法人身份证</item>
+        <item>DIMEX</item>
+        <item>NITE</item>
+        <item>外国人</item>
+    </string-array>
+
+    <!-- TODO: VistaCompraCliente-->
+    <string name="et_consultar_producto">请输入产品代码</string>
+    <string name="tv_titulo_numero_cedula">身份证：</string>
+    <string name="tv_titulo_correo">邮箱：</string>
+    <string name="tv_titulo_celular">手机号：</string>
+    <string name="tv_titulo_saludo">你好，</string>
+    <string name="texto_consulta_articulo">您想添加新商品吗？</string>
+    <string name="texto_mas_bolsas">您想添加更多袋子吗？</string>
+    <string name="texto_eliminar_articulo">您想删除任何商品吗？</string>
+    <string name="tv_ean_producto">条形码</string>
+    <string name="tv_descripcion_producto">描述</string>
+    <string name="tv_cantidad_producto">数量</string>
+    <string name="tv_valor_producto">价值</string>
+    <string name="tv_precio_producto">单价</string>
+    <string name="tv_descuento_producto" translatable="false">折扣</string>
+    <string name="tv_total_producto">需支付金额</string>
+    <string name="tv_precio_producto_mp">需支付金额（折扣或促销）</string>
+    <string name="tv_indicador_producto">指示器（折扣或促销）</string>
+    <string name="tv_descuento_tarifa_producto">费率折扣</string>
+    <string name="tv_titulo_valor_final_producto">最终价值：</string>
+    <string name="tv_numero_articulos">商品数量</string>
+    <string name="tv_subtotal">小计</string>
+    <string name="tv_total_descuento">总折扣</string>
+    <string name="btn_nuevos_articulos">添加新商品</string>
+    <string name="btn_elimar_articulos">删除商品</string>
+    <string name="btn_mas_bolsas">添加袋子</string>
+    <string name="btn_ingresar">输入</string>
+    <string name="ejm_id">例如：1234566778</string>
+    <string name="tv_total_pagar">需支付总额</string>
+    <string name="btn_pagar">支付</string>
+    <string name="btn_pagar_precio">支付 %1$s</string>
+    <string name="btn_cambiarmp">更改支付方式</string>
+    <string name="btn_reiniciar">重新读取身份证</string>
+    <string name="texto_medio_de_pago_seleccionado">支付方式</string>
+    <string name="btn_volver_a_empezar">重新开始</string>
+    <string name="title_volver_a_empezar">重新读取</string>
+    <string name="texto_volver_a_empezar">您确定要重新开始阅读商品吗？</string>
+    <string name="progress_consultando_producto">正在查询商品…</string>
+    <string name="progress_consultando_productos">正在查询商品…</string>
+    <string name="error_producto_no_encontrado">未找到商品</string>
+    <string name="confirme_lectura_eanes">确认阅读 %1$s</string>
+    <string name="incentivo">奖励</string>
+    <string name="btn_salir_confi">退出设置</string>
+    <string name="editar_texto_fragment">编辑 %1$s</string>
+    <string name="problemas_lector">读卡器功能异常，请与商店管理员联系。</string>
+    <string name="producto_precio_cero">发现一个价格为 0 的商品。请将其从抽屉中取出，并通知收银员。商品：%1$s</string>
+    <string name="productos_precio_cero">发现多个价格为 0 的商品。请将它们从抽屉中取出，并通知收银员。商品：%1$s</string>
+
+    <!-- TODO: VistaMediosPago-->
+    <string name="pagar_bancolombia_qr">Bancolombia QR</string>
+    <string name="pagar_tarjeta">信用卡</string>
+    <string name="tv_titulo_seleccione">请选择支付方式：</string>
+    <string name="btn_atras_medio_pago">返回</string>
+    <string name="btn_regresar">返回</string>
+    <string name="pago_no_encontrado_qr_bancolombia_idioma">未找到支付。</string>
+    <string name="total_a_pagar">总金额：</string>
+    <string name="cantidad_articulos_mp">商品数量：</string>
+    <string name="error_cupo_empleado">无法完成销售，您的员工配额为 %1$s… 超出配额 %2$s，如果要继续购买，请选择其他付款方式。</string>
+    <string name="progress_procesando_compra">处理购买中…</string>
+    <string name="progress_procesando_compra_exitosa">支付成功，购买完成…</string>
+    <string name="progress_procesando_compra_datafono">生成数据机请求…</string>
+    <string name="tv_nombre_producto_texto">GALAX 塑料袋</string>
+    <string name="tv_valor_final_texto">最终金额：</string>
+    <string name="tv_cantidad_texto">3</string>
+    <string name="tv_Precio_texto">$60</string>
+    <string name="tv_Dcto_texto">$0</string>
+    <string name="tv_valor_pagar_texto">$180</string>
+    <string name="codigo_ya_redimido_idioma">验证码已兑换</string>
+    <string name="codigo_ya_expiro_idioma">验证码已过期</string>
+    <string name="codigo_no_existe_idioma">验证码不存在</string>
+    <string name="introduce_codigo_verificacion">请输入验证码</string>
+    <string name="codigo_verificacion_incorrecto">输入的验证码不正确</string>
+
+    <!-- TODO: VistaFragmentFooter-->
+    <string name="texto_desarrollado_por">由 Crystal S.A.S 开发</string>
+    <string name="titulo_terminos_condiciones">条款和条件</string>
+    <string name="texto_terminos_condiciones">仅适用于在线电子支付。不适用于需要商店管理员管理的折扣，如军队、Bancolombia 等。对于此类购买或产品退货，请前往由店员管理的付款点。</string>
+
+    <!-- TODO: VistaConfiguracion-->
+    <string name="guardado_exitoso_xml">设备配置已成功保存。</string>
+    <string name="mensaje_guardar_xml">无法保存 XML 文件，因为目录未正确创建，请与管理员联系。</string>
+    <string name="epson">爱普生</string>
+    <string name="bixolon">Bixolon</string>
+
+    <!-- TODO: VistaImprimirTirilla-->
+    <string name="tx_texto_impresion_gracias">感谢您的购买！</string>
+    <string name="tx_texto_impresion_espera">期待您的再次光临</string>
+    <string name="tx_texto_bixolon_config">Seleccione el dispositivo BIXOLON para imprimir</string>
+    <string name="tx_texto_impresion_califica">请给予您的体验评价</string>
+    <string name="tx_texto_impresion_gracias_califica">感谢您的评价</string>
+    <string name="impresora_configuracion">配置打印机</string>
+    <string name="tef_configuracion">配置支付终端</string>
+    <string name="perifericos_configuracion">Configurar Perifericos</string>
+    <string name="log_configuracion">Configurar Log</string>
+    <string name="direccion_ip">IP地址</string>
+    <string name="puerto">端口</string>
+    <string name="mac">MAC地址</string>
+    <string name="codigo_respuesta">响应代码</string>
+    <string name="codigo_datafono">支付终端代码</string>
+    <string name="codigo_unico_datafono">唯一商户代码</string>
+    <string name="et_usuario_datafono">支付终端用户名</string>
+    <string name="et_pass_datafono">支付终端密码</string>
+    <string name="et_pass_supervisor" translatable="false">管理员密码（取消）</string>
+    <string name="et_time_datafono">支付终端超时（大于等于 3 秒）</string>
+    <string name="texto_mayor_o_igual_a">请输入大于等于 3 秒的时间。</string>
+    <string name="et_time_datafono_espera" translatable="false">等待刷卡器超时（大于或等于3分钟）</string>
+    <string name="texto_mayor_o_igual_a_espera" translatable="false">请输入大于或等于3分钟的时间。</string>
+    <string name="config_impresora">配置打印机</string>
+    <string name="desconectando">断开连接</string>
+    <string name="no_conectado">未连接</string>
+    <string name="error_desconectada">错误！断开连接</string>
+    <string name="bluetooth_error_adapter">读取蓝牙适配器出错</string>
+    <string name="bluetooth_apagado">蓝牙已关闭</string>
+    <string name="pulse_impresion">请按打印按钮</string>
+    <string name="activat_bluetooth_impr">您需要打开蓝牙才能进行打印。</string>
+    <string name="conectado___">连接中…</string>
+    <string name="imprimiendo___">正在打印…</string>
+    <string name="impresion_realizada">打印完成</string>
+    <string name="rivise_dispositivo_bluetooth">请检查设备连接情况以及蓝牙是否已打开。</string>
+    <string name="revise_ip_puerto">请检查输入的 IP 地址和端口以及您的互联网连接。</string>
+    <string name="btn_salir_impresion">关闭</string>
+    <string name="btn_salir_datafono">关闭并保存</string>
+    <string name="btn_imprimir">打印</string>
+    <string name="re_imprimir">重新打印</string>
+    <string name="proceso_curso">请稍等，正在进行处理</string>
+    <string name="selec_impresora">您需要选择一个打印机</string>
+    <string name="introducir_puerto_ip">您需要输入 IP 地址和端口</string>
+    <string name="error_impresion_intentar">打印出错，请重试</string>
+    <string name="texto_pruebas">*测试成功*</string>
+    <string name="texto_pruebasCodigoBarras">测试-OK</string>
+    <string name="texto_numeroCaja">箱号：</string>
+    <string name="texto_fecha">日期：</string>
+    <string name="texto_numeroDeIdentificacion">身份证号：</string>
+    <string name="texto_numeroTransacionSencillo">编号：</string>
+    <string name="texto_nombreTienda">商店</string>
+    <string name="compra_selfcheckout">在 SelfCheckout 上完成购买</string>
+    <string name="btn_prueba_datafono">通讯测试</string>
+    <string name="progress_seguir_pasos_datafono">按支付终端的绿色按钮并按照说明进行操作（%1$s）…</string>
+    <string name="progress_seguir_pasos_datafono_cliente">按支付终端的绿色按钮并按照说明进行操作…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_redeban" translatable="false">在支付终端中选择 2 并搜索取消，然后按照说明进行操作…</string>
+    <string name="progress_seguir_pasos_datafono_cliente_anulacion">在终端上按下6键，选择取消选项并按照说明进行操作…</string>
+    <string name="texto_tituloCertificadoRegalo" translatable="false">礼品券</string>
+
+    <!-- TODO: VistaDeviceBluetoothSelectDialogFragment-->
+    <string name="select_impresora_blue">请选择要使用的蓝牙打印机</string>
+    <string name="dispositivo_bluetooth">蓝牙设备</string>
+    <string name="mostrar_todos">显示所有</string>
+
+    <!-- TODO: Lottie-->
+    <string name="animacion_escanear_cedula">license_scanning.json</string>
+    <string name="animacion_splash_inicio">splash_inicio.lottie</string>
+    <string name="animacion_splash_inicio2">splash_inicio2.lottie</string>
+    <string name="animacion_inicio_sesion">inicio_session.json</string>
+    <string name="animacion_compra_realizada">animation_compra1.json</string>
+    <string name="animacion_here">animation_here.json</string>
+    <string name="animacion_buscar">animation_buscar.json</string>
+    <string name="animacion_datafono">datafono_animacion.json</string>
+    <string name="animacion_info">animation_information.lottie</string>
+    <string name="animacion_flecha_derecha_azul">animation_flecha_derecha_azul.json</string>
+    <string name="animacion_cara_enojada">animation_cara_enojada.json</string>
+    <string name="animacion_cara_neutral">animation_cara_neutral.json</string>
+    <string name="animacion_cara_feliz">animation_cara_feliz.json</string>
+
+    <!-- TODO: CantidadBolsasDialogFragment-->
+    <string name="et_hint_cantidad_bolsas">袋数</string>
+    <string name="cantidad_de_bolsas">袋子数量</string>
+    <string name="texto_cantidad_bolsas">请输入您本次购物想要带走的袋子数量</string>
+    <string name="texto_info_bolsas_agregadas">已添加 %1$s 个袋子</string>
+    <string name="texto_info_bolsas_agregada">已添加一个袋子</string>
+    <string name="progress_consultando_bolsa">正在添加 %1$s 个袋子…</string>
+    <string name="progress_consultando_bolsas">正在添加 %1$s 个袋子…</string>
+    <string name="resumen_compra">购物摘要</string>
+    <string name="btn_atras_bolsas">返回</string>
+    <string name="btn_continuar_bolsas">无需袋子继续</string>
+    <string name="limite_bolsas">您不能携带超过 (%1$s) 个袋子</string>
+    <string name="btn_continuar_bolsas_cantidad">携带 (1) 个袋子继续</string>
+    <string name="btn_continuar_bolsas_cantidad_mas">携带 (%1$s) 个袋子继续</string>
+
+    <!-- TODO: QrBancolombiaDialogFragment-->
+    <string name="btn_finalizar">完成购买</string>
+    <string name="texto_finalizar_qr_bancolombia">扫描二维码后完成购买</string>
+    <string name="progress_generando_qr">生成二维码中…</string>
+    <string name="progress_tarjeta">请按照支付终端的步骤操作…</string>
+    <string name="error_crear_qr">二维码 SVG 发生错误，请联系管理员。</string>
+    <string name="title_qr_dialogfragment">使用手机支付</string>
+    <string name="message_qr_dialogfragment">请使用 Bancolombia 或 Nequi 应用扫描</string>
+
+    <!-- TODO: CambiarUrlDialogFragment-->
+    <string name="titleUrlDialogFragment">更改基础 URL</string>
+    <string name="msjUrlDialogFragment">请输入服务的 URL</string>
+    <string name="msjUrlDialogFragment_in">中间 URL（QR、RFID）</string>
+    <string name="msjUrlDialogFragment_nn">非原生 URL（其他服务）</string>
+    <string name="url_invalida">无效的中间 URL</string>
+    <string name="url_invalida_nn">无效的非原生 URL</string>
+
+    <!-- TODO: DepatamentosDialogFrangment-->
+    <string name="select_departamento">选择一个省份</string>
+    <string name="departamentos">省份</string>
+
+    <!-- TODO: CiudadesDialogFragment-->
+    <string name="select_cuidad">选择一个城市</string>
+    <string name="cuidades">城市</string>
+
+    <!-- TODO: DescuentosClienteDialogFragment-->
+    <string name="select_descuento_compra">为您的购物选择一个折扣：</string>
+    <string name="select_descuento_medio_de_pago_compra">为您的购物选择一个折扣/支付方式</string>
+    <string name="medio_de_pago">支付方式</string>
+    <string name="select_medio_de_pago_compra">为您的购物选择一个支付方式</string>
+    <string name="medio_de_pago_referido">折扣/支付方式推荐</string>
+    <string name="select_medio_de_pago_compra_referido">为您的购物选择一个推荐的折扣/支付方式</string>
+    <string name="cupon_referido">优惠码（员工推荐）</string>
+    <string name="btn_validar_cupon">验证优惠券</string>
+    <string name="inserte_codigo_cupon">请输入优惠券代码</string>
+    <string name="dialog_progress_validar_cupon">验证代码中…</string>
+    <string name="title_quitar_del_carrito">移除产品</string>
+    <string name="texto_quitar_del_carrito">请将您不想带走的商品从购物篮中移除</string>
+    <string name="texto_quitar_del_carrito_comprobar">您未将产品（%1$s）从购物篮中移除，请移除该产品。</string>
+    <string name="helper_tv_referido">如果您有推荐代码，请在此处输入</string>
+    <string name="serial_seriales_registrados">未发现新产品。</string>
+
+    <!-- TODO: VerificarCodigoDialogFragment-->
+    <string name="tv_texto_codigo">代码</string>
+    <string name="btn_verificar_codigo">验证代码</string>
+    <string name="tv_texto_helper_codigo">在此输入代码，然后点击“验证代码”按钮</string>
+    <string name="btn_reenviar_codigo">重新发送代码</string>
+    <string name="btn_atras_verificacion">返回</string>
+    <string name="title_dialog_verificacion">验证</string>
+    <string name="texto_dialog_verificacion">请输入发送到电话号码 (%1$s) 或电子邮件地址 (%2$s) 的验证码。</string>
+    <string name="ups_algo_mal">哎呀！出了点问题</string>
+    <string name="ups_algo_mal_msj">很抱歉，我们在处理您的请求时遇到了问题。请重试或咨询柜台获取更多信息。Cod (%1$s)</string>
+    <string name="ups_algo_mal_msj_tef">很抱歉，我们在处理您在支付终端的请求时遇到了问题。请联系店铺顾问。代码 (%1$s)</string>
+    <string name="ups_algo_mal_msj_actualizar">很抱歉，我们在更新交易时遇到了问题。Cod (%1$s)</string>
+
+    <!-- TODO: Generales-->
+    <string name="ok">好</string>
+    <string name="generico">继续，通用客户</string>
+    <string name="entiendo">我明白</string>
+    <string name="cambiar_idioma_titulo" translatable="false">更改语言</string>
+    <string name="flecha_salir">退出</string>
+    <string name="flecha_continuar">继续</string>
+    <string name="si">是</string>
+    <string name="si_continuar">是，继续</string>
+    <string name="no">不</string>
+    <string name="anular">取消</string>
+    <string name="no_incorrectos">输入其他身份证号码</string>
+    <string name="retirado">已移除</string>
+    <string name="retirar_cajon">好的，商品已移除</string>
+    <string name="atras">返回</string>
+    <string name="soy_yo">是我</string>
+    <string name="continuar">继续</string>
+    <string name="volver_inicio">返回首页</string>
+    <string name="certicado_regalo" translatable="false">礼品券</string>
+    <string name="ir_a_pagar">去支付</string>
+    <string name="ir_medio_pago">去支付方式</string>
+    <string name="agregar">添加</string>
+    <string name="error">错误</string>
+    <string name="confirmar">确认</string>
+    <string name="atencion">注意</string>
+    <string name="cancelar">取消</string>
+    <string name="error_conexion_sb">与基础网络服务的连接出错。</string>
+    <string name="error_conexion">连接出错：</string>
+    <string name="informacion">信息</string>
+    <string name="pago_exitososo">支付成功</string>
+    <string name="descuentos">折扣 %1$s</string>
+    <string name="salir">退出</string>
+    <string name="descuentos_medio_de_pago">折扣/支付方式</string>
+    <string name="aceptar">接受</string>
+    <string name="buscar">搜索</string>
+    <string name="entendido">明白了</string>
+    <string name="reintentar">重试</string>
+    <string name="positivo_anulacion">取消</string>
+    <string name="negativo_anulacion">更多信息</string>
+    <string name="_ir">前往</string>
+    <string name="cerrar">关闭</string>
+    <string name="volver">返回</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="credibanco">CrediBanco</string>
+    <string name="Redeban">Redeban</string>
+    <string name="ip_dns">IP/DNS</string>
+    <string name="cerrar_sesion">注销</string>
+    <string name="impresora_epson">爱普生（蓝牙/IP）</string>
+    <string name="log_activar">Activar Log</string>
+    <string name="log_desactivar">Desactivar Log</string>
+    <string name="impresora_bixolon">Bixolon（USB）</string>
+    <string name="puerto_invalido">无效的端口</string>
+    <string name="autorizar">授权</string>
+    <string name="imprimir_info">打印</string>
+    <string name="info_cajon" translatable="false">取下挂钩，并将所有物品放入抽屉</string>
+    <string name="info_cajon_nuevos" translatable="false">取下挂钩，并将所有新物品放入抽屉</string>
+    <string name="info_cajon_ganchos" translatable="false">挂钩抽屉</string>
+    <string name="info_cajon_ropa" translatable="false">服装抽屉</string>
+
+    <!-- TODO: Mensajes de voz del dispositivo-->
+    <string name="bienvenido_al_autopago">欢迎使用自助结账</string>
+    <string name="voz_seleccione_caja">为商店选择收银台，%1$s。</string>
+    <string name="ingrese_su_numero_cedula">请输入您的身份证号码</string>
+    <string name="voz_registro">想要注册吗？</string>
+    <string name="voz_cliente_generico">是否愿意继续，不输入数据？</string>
+    <string name="voz_confirmacion_de_datos_cliente">确认屏幕上显示的数据。</string>
+    <string name="voz_eliminar_productos_canasta">从抽屉中移除不想要带走的所有商品。</string>
+    <string name="voz_inserte_productos_canasta" translatable="false">取下挂钩，并将所有物品放入抽屉。</string>
+    <string name="voz_inserte_productos_canasta_nuevos" translatable="false">取下挂钩，并将所有新物品放入抽屉。</string>
+    <string name="voz_medio_de_pago">选择支付方式。</string>
+    <string name="voz_medio_de_pago_otro">选择其他支付方式。</string>
+    <string name="voz_cantidad_articulos">%1$s 件商品已添加</string>
+    <string name="voz_cantidad_articulo">商品已添加</string>
+    <string name="voz_pago_tef">按支付终端上的绿色按钮，然后按照指示操作</string>
+    <string name="voz_anulacion_tef">按支付终端上的 2 号按钮，然后按照指示操作</string>
+    <string name="voz_agradecimiento_compra">感谢您的购买。不要忘记取走所有的物品和收据。您也可以对自助结账系统进行评价。</string>
+    <string name="voz_califica_autopago">请对我们的自助结账系统进行评价。</string>
+    <string name="voz_codigo_verificacion">请输入发送到手机或电子邮件的验证码。</string>
+    <string name="voz_bolsas">请输入您本次购物想要带走的袋子数量。</string>
+    <string name="voz_qr_bancolombia">通过手机支付，使用 Bancolombia 或 Nequi 应用扫描。
+    扫描二维码后完成购买。</string>
+    <string name="btn_sin_datos" translatable="false">继续无数据</string>
+    <string name="texto_sin_datos" translatable="false">您是否要继续而不输入身份证号码？</string>
+
+    <!-- TODO: politicasGEF -->
+    <string-array name="titulos_politicas_gef">
+        <item>尊敬的消费者</item>
+        <item>退换政策</item>
+        <item>隐私声明</item>
+        <item>保修政策</item>
+    </string-array>
+    <string-array name="texto_politicas_gef">
+        <item>如果您的账单或购买出现任何不一致情况，您最多有7个日历日来提出投诉，使用我们的PQRS表格。本店提供请愿书、投诉、
+            申诉和建议（PQRS）表格。如果您需要提交PQRS，请向管理员、助理或店员要求表格；清楚指明不满的事实或原因，
+            明确指出事件的日期和时间，如果可能的话，提供直接了解您投诉的人的姓名，并要求店铺负责人签署一份PQRS接收副本。
+            如果没有可用的表格或没有负责接收PQRS的人员，请联系公司的免费国家热线 01 8000 517 536 或（604）540 73 38，
+            或发送电子邮件至servicioalcliente@crystal.com.co，并向工业和商业监督局报告下述电话：全国免费电话01 8000 910 165，
+            在波哥大651 2140，电子邮件：info@sic.gov.co，或访问网站www.sic.gov.co 联系信息：地址：Carrera 48 nro 52 sur 81，
+            Sabaneta，安蒂奥基亚，电子邮件：proteccionbasedatos@crystal.com.co - 电话：（604）6048294</item>
+        <item>更换时间：购买后30个日历日内（发票日期）。要更换商品，商品必须处于完好状态，干净未使用，带有商标和标签。
+            商品不得修改或改变其原始包装。不允许更换个人用品（内裤，丁字裤，男士内裤，按摩器，保温瓶，袜子，口罩，领口，袖子，
+            帽子或其他个人保护和护理产品），珠宝，仿珠宝，个人护理和化妆品。袜子，上衣，文胸和泳装可以更换，如果它们保留商标，
+            标签和保护层。Runproof，Furor和Intertex的服装不可更换或保修。</item>
+        <item>在此隐私声明中，识别为税号890.901.672–5的CRYSTAL S.A.S公司，根据2012年第1581号法律的第9和第12条的规定以及其他相关条款和规定，
+            负责收集和处理您提供的个人数据，以开展社会目的和本公司的行政发展活动，特别是用于开具发票，履行税务义务，
+            对客户行为进行分析以确定消费习惯，以改善客户对Crystal S.A.S品牌的体验；记录活跃和不活跃的客户；
+            通过不同渠道（电子邮件，纸质邮件，通过呼叫中心等）联系客户或未来客户以商业、收款或法律目的；处理并解决客户或未来客户提出的请求、
+            投诉、申诉和/或建议；与公共或私人实体合作在市场营销领域开展学术活动。因此，存储的数据仅用于上述目的。此外，
+            作为我们公司处理的个人数据的持有人，您享有法律和宪法赋予您的所有权利和保障，特别是查询我们公司存储的您为持有人的个人数据，
+            更新此类数据，请求更正或删除数据，以及撤销您授权我们处理数据的许可。此外，CRYSTAL S.A.S公司通知您，
+            您可以通过访问www.crystal.com.co网站了解适用于存储您信息的数据库的完整的个人数据处理政策。联系信息：地址：
+            Carrera 48 nro 52 sur 81，Sabaneta，Antioquia。电子邮件：proteccionbasedatos@crystal.com.co - 电话：
+            （604）6048294</item>
+        <item>质量保修期：购买后3个月（发票日期）。要处理您的申诉，商品不能由购买者修改或更改其原始状态，而且必须处于良好状态并且干净。
+            对于面霜，磨砂膏，油，玫瑰水，蜡烛和空气清新剂的参考，如果它们对用户产生了健康影响，则适用保修。如果缺陷不符合保修退货的条件。
+            除非标签明确说明，否则我们的产品不适合作为制服和/或公司装或类似用途。</item>
+    </string-array>
+
+    <!-- TODO: NoCambiarIdioma -->
+    <string name="codigo_ya_redimido">El código de verificación ya fue redimido</string>
+    <string name="codigo_ya_expiro">El código de verificación ya expiró</string>
+    <string name="codigo_no_existe">El código de verificación no existe</string>
+    <string name="pago_no_encontrado_qr_bancolombia">No se ha encontrado el pago.</string>
+    <string name="texto_no_encuentra_pago_tef">No se encuentra el pago</string>
+    <string name="btn_cambiar_idioma" translatable="false">Cambiar idioma / Change language</string>
+    <string name="texto_cambiar_idioma" translatable="false">¿Quieres cambiar el idioma? / Do you want to change the language?</string>
+    <string name="seleccion_lenguaje" translatable="false">Seleccione el lenguaje de su preferencia / Select the language of your preference</string>
+    <string-array name="language_options">
+        <item>Español / Spanish - Colombia</item>
+        <item>Inglés / English - Estados Unidos / United States</item>
+        <item>Francés / French - Francia / France</item>
+        <item>Ruso / Russian - Rusia / Russia</item>
+        <item>Mandarín - China</item>
+    </string-array>
+</resources>

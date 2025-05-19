@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clASDF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.dialogfragment.VistaAutorizacionSimpleFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseAnulacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogoAnulacion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/anular_tef_dos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseAnulacion" />
+
+    <TextView
+        android:id="@+id/tvTituloAutorizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/titulo_anulacion"
+        android:textColor="@color/color_texto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoAnulacion" />
+
+    <TextView
+        android:id="@+id/tvTextoAnulacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/texto_anulacion"
+        android:textColor="@color/color_texto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAutorizacion" />
+
+    <ListView
+        android:id="@+id/lvAnulacionSelect"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTextoAnulacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTextoAnulacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoAnulacion" />
+
+    <Button
+        android:id="@+id/btnAtrasAnularTef"
+        style="@style/fuente"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:drawableStart="@drawable/flecha_izquierda"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lvAnulacionSelect"
+        app:layout_constraintStart_toStartOf="@+id/lvAnulacionSelect"
+        app:layout_constraintTop_toBottomOf="@+id/lvAnulacionSelect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

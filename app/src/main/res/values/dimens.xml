@@ -1,0 +1,63 @@
+<resources>
+    <!-- Dimenciones para vista_splash_screen_inicio-->
+    <dimen name="vssi_texto_size">40sp</dimen>
+
+    <!-- Dimenciones para vista_login-->
+    <dimen name="vl_texto_size">18sp</dimen>
+
+    <!-- Dimenciones para vista_consulta_cliente-->
+    <dimen name="vcc_texto_size">22sp</dimen>
+    <dimen name="vcc_et_texto_size">16sp</dimen>
+    <dimen name="vcc_btn_texto_size">16sp</dimen>
+    <dimen name="vcc_texto_size_intrucciones">24sp</dimen>
+    <dimen name="vcc_texto_size_bienvenida">40sp</dimen>
+    <dimen name="vcc_texto_size_titulo_lectura_cedula">24sp</dimen>
+    <dimen name="vcc_texto_size_lectura_cedula">14sp</dimen>
+    <dimen name="vcc_texto_size_titulo_instrucciones">24sp</dimen>
+
+    <!-- Dimenciones para vista_compra_cliente-->
+    <dimen name="vcomprac_texto_size">20sp</dimen>
+    <dimen name="vcomprac_texto_size_lectura_articulo">16sp</dimen>
+    <dimen name="vcomprac_texto_size_info_cliente">18sp</dimen>
+    <dimen name="vcomprac_texto_size_saludo_cliente">24sp</dimen>
+
+    <!-- Dimenciones para vista_medios_de_pago-->
+    <dimen name="vmdp_texto_size">18sp</dimen>
+    <dimen name="vmdp_texto_size_titulo_mdp">26sp</dimen>
+
+    <!-- Dimenciones para vista_fragment_footer-->
+    <dimen name="vff_texto_size_desarrollado_por">18sp</dimen>
+    <dimen name="vff_texto_size_terminos_condiciones">16sp</dimen>
+
+    <!-- Dimenciones para vista_fragment_header_producto-->
+    <dimen name="vfhp_texto_size">18sp</dimen>
+
+    <!-- Dimenciones para vista_recyclerview_producto-->
+    <dimen name="vrp_texto_size">16sp</dimen>
+    <dimen name="vrp_texto_size_vf">19sp</dimen>
+
+    <!-- Dimenciones para vista_fragment_header_resumen_compra -->
+    <dimen name="vfhrc_texto_size">20sp</dimen>
+
+    <!-- Dimenciones para vista_fragment_resumen_compra-->
+    <dimen name="vfrc_texto_size">18sp</dimen>
+
+    <!-- Dimenciones para vista_dialog_fragment_qr_bancolombia-->
+    <dimen name="vdfqb_dimension_qr">220dp</dimen>
+
+    <!-- Dimenciones para vista_fragment_proceso-->
+    <dimen name="vfp_texto_size">15sp</dimen>
+    <dimen name="vfp_width_iv">60dp</dimen>
+    <dimen name="vfp_height_iv">60dp</dimen>
+    <dimen name="vfp_widthP_iv">36dp</dimen>
+    <dimen name="vfp_heightP_iv">36dp</dimen>
+    <dimen name="vfp_height_marcador">3sp</dimen>
+
+    <!-- Dimenciones para vista_dialog_fragment_cajon -->
+    <dimen name="vdfc_titulo_size">28sp</dimen>
+    <dimen name="vdfc_width_imagen_size">300dp</dimen>
+    <dimen name="vdfc_height_imagen_size">300dp</dimen>
+
+    <!-- Importante -->
+    <dimen name="separador_logo_pantalla">0.22</dimen>
+</resources>

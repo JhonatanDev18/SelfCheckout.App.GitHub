@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clClienteConsulta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.dialogfragment.VistaClienteConsultaDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseConsultaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPasoUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/usuario_consulta_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseConsultaCliente" />
+
+    <TextView
+        android:id="@+id/tvTituloConsultaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/confirmacion_de_datos"
+        android:textColor="@color/color_texto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPasoUno" />
+
+    <TextView
+        android:id="@+id/tvTextoConsultaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/texto_confirmacion_de_datos"
+        android:textColor="@color/color_texto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloConsultaCliente" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConsultaCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="6sp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvTextoConsultaCliente"
+        app:layout_constraintStart_toStartOf="@+id/tvTextoConsultaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoConsultaCliente"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFondoConsultaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_cedula_cliente"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConsultaCedula"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCedula"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCedula"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_nombre_cliente"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliConsultaCedula">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConsultaNombre"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaNombre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaNombre"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_celular_cliente"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliConsultaNombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConsultaCelular"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCelular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCelular"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliConsultaCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/tv_correo_cliente"
+                android:textColorHint="@color/color_texto"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliConsultaCelular">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConsultaCorreo"
+                    style="@style/fuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tliConsultaCorreo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tliConsultaCorreo"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSiSoyYo"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:text="@string/soy_yo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cvConsultaCliente"
+        app:layout_constraintStart_toStartOf="@+id/cvConsultaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/cvConsultaCliente" />
+
+    <Button
+        android:id="@+id/btnDatosIncorrectos"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:elevation="4dp"
+        android:text="@string/no_incorrectos"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cvConsultaCliente"
+        app:layout_constraintStart_toStartOf="@+id/cvConsultaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiSoyYo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

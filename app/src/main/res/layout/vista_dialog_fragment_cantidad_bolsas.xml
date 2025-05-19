@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clClienteConsulta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.crystal.selfcheckoutapp.Vista.dialogfragment.VistaCantidadBolsasDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivCloseBolsas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/vector_cerrar_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSeleccionarBolsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bolsas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseBolsas" />
+
+    <TextView
+        android:id="@+id/tvTextoBolsas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/texto_cantidad_bolsas"
+        android:textColor="@color/color_texto"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSeleccionarBolsa" />
+
+    <ImageView
+        android:id="@+id/ivRestarBolsa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menos_negro"
+        app:layout_constraintBottom_toBottomOf="@+id/tliCantidadBolsas"
+        app:layout_constraintEnd_toStartOf="@+id/tliCantidadBolsas"
+        app:layout_constraintTop_toTopOf="@+id/tliCantidadBolsas"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tliCantidadBolsas"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/et_hint_cantidad_bolsas"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextoBolsas">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCantidadBolsas"
+            style="@style/fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tliCantidadBolsas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tliCantidadBolsas" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivSumarBolsa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mas_negro"
+        app:layout_constraintBottom_toBottomOf="@+id/tliCantidadBolsas"
+        app:layout_constraintStart_toEndOf="@+id/tliCantidadBolsas"
+        app:layout_constraintTop_toTopOf="@+id/tliCantidadBolsas"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAtrasBolsa"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_blanco"
+        android:drawableStart="@drawable/flecha_izquierda"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/color_texto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnContinuarBolsa"
+        app:layout_constraintStart_toStartOf="@+id/btnContinuarBolsa"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinuarBolsa" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCuadrante1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnContinuarBolsa"
+        style="@style/fuente"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_verde"
+        android:elevation="4dp"
+        android:text="@string/btn_continuar_bolsas"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tliCantidadBolsas"
+        app:layout_constraintStart_toStartOf="@+id/tliCantidadBolsas"
+        app:layout_constraintTop_toBottomOf="@+id/tliCantidadBolsas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

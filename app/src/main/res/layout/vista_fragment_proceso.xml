@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvHeaderProductos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlFondoBonoResumenCompra"
+        android:background="@color/color_proceso"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvPasoUno"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/tab_consultaCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivOvalUno" />
+
+        <ImageView
+            android:id="@+id/ivOvalUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oval"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPasoUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/usuario_consulta"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalUno"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalUno"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalUno"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalUno" />
+
+        <TextView
+            android:id="@+id/tvMarcadorUno"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/color_texto"
+            android:gravity="center"
+            android:text="@string/tab_consultaCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalUno"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalUno"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasoUno" />
+
+        <TextView
+            android:id="@+id/tvSeparador"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_texto"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalUno"
+            app:layout_constraintEnd_toStartOf="@+id/ivOvalDos"
+            app:layout_constraintStart_toEndOf="@+id/ivOvalUno"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalUno" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoProceso1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <!--Divición para el paso 2-->
+
+        <ImageView
+            android:id="@+id/ivOvalDos"
+            android:layout_width="@dimen/vfp_width_iv"
+            android:layout_height="@dimen/vfp_height_iv"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oval"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso2"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPasoDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/usuario_escaneo"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalDos"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalDos"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalDos"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalDos" />
+
+        <TextView
+            android:id="@+id/tvPasoDos"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/tab_compraCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso2"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso1"
+            app:layout_constraintTop_toBottomOf="@+id/ivOvalDos" />
+
+        <TextView
+            android:id="@+id/tvMarcadorDos"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/color_texto"
+            android:gravity="center"
+            android:text="@string/tab_consultaCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalDos"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasoDos" />
+
+        <TextView
+            android:id="@+id/tvSeparador2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_texto"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalDos"
+            app:layout_constraintEnd_toStartOf="@+id/ivOvalTres"
+            app:layout_constraintStart_toEndOf="@+id/ivOvalDos"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalDos" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoProceso2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!--Divición para el paso 3-->
+
+        <ImageView
+            android:id="@+id/ivOvalTres"
+            android:layout_width="@dimen/vfp_width_iv"
+            android:layout_height="@dimen/vfp_height_iv"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oval"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso3"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPasoTres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/usuario_medio_pago"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalTres"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalTres"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalTres"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalTres" />
+
+        <TextView
+            android:id="@+id/tvPasoTres"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/tab_medioPago"
+            android:gravity="center"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/glInternoProceso3"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso2"
+            app:layout_constraintTop_toBottomOf="@+id/ivOvalTres" />
+
+        <TextView
+            android:id="@+id/tvMarcadorTres"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/color_texto"
+            android:gravity="center"
+            android:text="@string/tab_consultaCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalTres"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasoTres" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInternoProceso3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <!--Divición para el paso 4-->
+
+        <ImageView
+            android:id="@+id/ivOvalCuatro"
+            android:layout_width="@dimen/vfp_width_iv"
+            android:layout_height="@dimen/vfp_height_iv"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPasoCuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/usuario_comprobar"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalCuatro"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalCuatro"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalCuatro"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalCuatro" />
+
+        <TextView
+            android:id="@+id/tvPasoCuatro"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/tab_tirilla"
+            android:gravity="center"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glInternoProceso3"
+            app:layout_constraintTop_toBottomOf="@+id/ivOvalCuatro" />
+
+        <TextView
+            android:id="@+id/tvMarcadorCuatro"
+            style="@style/fuente"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/color_texto"
+            android:gravity="center"
+            android:text="@string/tab_consultaCliente"
+            android:textColor="@color/color_texto"
+            android:textSize="@dimen/vfp_texto_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/ivOvalCuatro"
+            app:layout_constraintStart_toStartOf="@+id/ivOvalCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasoCuatro" />
+
+        <TextView
+            android:id="@+id/tvSeparador3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_texto"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOvalTres"
+            app:layout_constraintEnd_toStartOf="@+id/ivOvalCuatro"
+            app:layout_constraintStart_toEndOf="@+id/ivOvalTres"
+            app:layout_constraintTop_toTopOf="@+id/ivOvalTres" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

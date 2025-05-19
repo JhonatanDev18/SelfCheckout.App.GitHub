@@ -1,0 +1,3 @@
+rootProject.name = "SelfCheckoutApp"
+include 'bixolon_pdf'
+include ':app'
